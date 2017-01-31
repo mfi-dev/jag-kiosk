@@ -1,13 +1,57 @@
 @require('../../assets/styles/vars.styl')
 
 h1
-  font-family 'alte-din'
   color $navy
+  font-family 'alte-din'
   text-transform uppercase
-  
-nav
-  a
-    color $gold
-    font-family 'stratum-bold'
-    text-transform uppercase
+
+.HomePage
+  background-color $navy
+  background-image url('../../assets/images/homepage-bg.jpg')
+  background-position 0 0
+  background-repeat no-repeat
+  height 1080px
+  overflow hidden
+  position relative
+  width 1920px
+
+.GoldLine
+  background-color $gold
+  height 10px
+  position absolute
+  width 100vw
+
+  &--Top
+    top 0
+
+  &--Bottom
+    bottom 0
+
+.Seal
+  position absolute
+  left 150px
+  top 100px
+
+.MainMenu
+  position absolute
+  left 50%
+  top 100px
+
+  &__LinkContainer
+    background-image url('../../assets/images/homepage-link-bg.jpg')
+    background-repeat no-repeat
+    box-shadow: 3px 6px 23px rgba(0,0,0,0.27);
+    height 145px
+    margin-bottom 72px
+    overflow hidden
+    width 822px
+
+  &__Link
+    color $white
+    font-family 'stratum'
+    font-size 48px
+    line-height 145px
     margin-right 10px
+    padding-left 58px
+    text-decoration none
+    text-transform uppercase
