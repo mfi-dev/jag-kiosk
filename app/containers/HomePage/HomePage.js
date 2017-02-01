@@ -1,30 +1,22 @@
 import React from 'react'
+import LinkBox from '../../components/LinkBox'
 import './HomePage.styl'
 
 class HomePage extends React.Component {
   render () {
     return (
       <div className='HomePage'>
-        <div className='GoldLine GoldLine--Top'></div>
-        <h1>JAG Kiosk</h1>
+        <div className='GoldLine GoldLine--Top' />
         <div className='Seal'>
           <img src='../../assets/images/jag-seal.png' />
         </div>
         <nav className='MainMenu'>
-          <div className='MainMenu__LinkContainer'>
-            <a className='MainMenu__Link' href='#'>The Judge Advocate Generals</a>
-          </div>
-          <div className='MainMenu__LinkContainer'>
-            <a className='MainMenu__Link' href='#'>Senior Paralegal Managers</a>
-          </div>
-          <div className='MainMenu__LinkContainer'>
-            <a className='MainMenu__Link' href='#'>Award Winners</a>
-          </div>
-          <div className='MainMenu__LinkContainer'>
-            <a className='MainMenu__Link' href='#'>Jag Corps Pulse</a>
-          </div>
+          <LinkBox className='Link' link='#' title='The Judge Advocate Generals' />
+          <LinkBox link='#' title='Senior Paralegal Managers' />
+          <LinkBox link='#' title='Award Winners' />
+          <LinkBox link='#' title='Jag Corps Pulse' />
         </nav>
-        <div className='GoldLine GoldLine--Bottom'></div>
+        <div className='GoldLine GoldLine--Bottom' />
       </div>
     )
   }
