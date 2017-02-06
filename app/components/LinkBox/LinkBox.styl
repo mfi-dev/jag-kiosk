@@ -7,9 +7,10 @@
   position relative
   overflow hidden
   background-color $navy
-  box-shadow: 3px 6px 23px rgba(0,0,0,0.27);
+  box-shadow: 3px 6px 23px rgba(0, 0, 0, .27)
   margin-bottom 88px
   text-decoration none
+  text-transform uppercase
 
   svg
     position absolute
@@ -18,7 +19,7 @@
 
   line
     stroke-width 2
-    stroke #fff
+    stroke $white
     fill none
     stroke-dasharray 382
     transition transform .155s ease-in
@@ -30,11 +31,9 @@
     line-height 145px
     margin-right 10px
     padding-left 58px
-    text-decoration none !important
-    text-transform uppercase
 
   &:hover
-    box-shadow 0 0 0 #000;
+    box-shadow 0 0 0 $black
 
     & svg line.top
       transform translateX(-297px)
@@ -44,4 +43,4 @@
 
     & .LinkBox__Link
       color $gold
-      box-shadow: 3px 6px 23px rgba(0,0,0,0.27);
+      box-shadow: 3px 6px 23px rgba(0, 0, 0, .27)
