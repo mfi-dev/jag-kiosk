@@ -2,10 +2,11 @@
   "name": "jag-kiosk",
   "version": "0.0.1",
   "description": "Touch screen kiosk app for JAG offices",
-  "main": "app.js",
+  "main": "./app/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "babel-node dev-server.js"
+    "dev": "babel-node dev-server.js",
+    "electron": "webpack && electron ."
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "body-parser": "^1.16.0",
     "compression": "^1.6.2",
+    "electron": "^1.4.15",
     "es6-promise": "^4.0.5",
     "express": "^4.14.1",
     "express-cors": "0.0.3",

@@ -1,26 +1,16 @@
 @require('../../assets/styles/vars.styl')
 
 .LinkBox
+  display block
   width 822px
   height 145px
   position relative
   overflow hidden
   background-color $navy
   box-shadow: 3px 6px 23px rgba(0,0,0,0.27);
-  margin-bottom: 85px
+  margin-bottom 88px
+  text-decoration none
 
-  &:hover
-    box-shadow 0 0 0 #000;
-    transition box-shadow .03s linear
-
-    a
-      color $gold
-      transition color .175s ease-out
-
-    & svg line.top
-      transform translateX(-297px)
-    & svg line.bottom
-      transform translateX(297px)
   svg
     position absolute
     top 0
@@ -31,7 +21,7 @@
     stroke #fff
     fill none
     stroke-dasharray 382
-    transition transform .175s ease-out
+    transition transform .155s ease-in
 
   &__Link
     color $white
@@ -40,5 +30,18 @@
     line-height 145px
     margin-right 10px
     padding-left 58px
-    text-decoration none
+    text-decoration none !important
     text-transform uppercase
+
+  &:hover
+    box-shadow 0 0 0 #000;
+
+    & svg line.top
+      transform translateX(-297px)
+
+    & svg line.bottom
+      transform translateX(297px)
+
+    & .LinkBox__Link
+      color $gold
+      box-shadow: 3px 6px 23px rgba(0,0,0,0.27);
