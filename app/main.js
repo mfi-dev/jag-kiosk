@@ -22,7 +22,22 @@ function createWindow () {
   })
 }
 
-app.on('ready', createWindow)
+function getImageData () {
+  const imageLocations = [
+    'assets/images/EarlyYears',
+    'assets/images/ModernEra',
+    'assets/images/TodaysForce'
+  ]
+  imageLocations.forEach(location => {
+    let jsonFileName = './' + location + '/' + location.substr((location.lastIndexOf('/') - location.length) + 1) + '.json'
+    let jsonFile = require(jsonFileName)
+    let ImageInfo = JSON.parse(JSON.stringify(jsonFile))
+    console.log(ImageInfo)
+  })
+  createWindow()
+}
+
+app.on('ready', getImageData)
 
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') {

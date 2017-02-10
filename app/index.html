@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <meta name="format-detection" content="telephone=no">
-        <title>JAG Kiosk</title>
-    </head>
-    <body>
-        <div id="app"></div>
-        <script type="text/javascript" src="bundle.js"></script>
-    </body>
+  <head>
+      <!-- <meta http-equiv='Content-Security-Policy' content='default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *'> -->
+      <meta name='msapplication-tap-highlight' content='no'>
+      <meta name='viewport' content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width'>
+      <meta name='format-detection' content='telephone=no'>
+      <title>JAG Kiosk</title>
+  </head>
+  <body>
+    <div id='app'></div>
+    <script type='text/javascript' src='bundle.js'></script>
+    <script type='text/javascript' src='assets/lib/swiper.min.js'></script>
+    <script>
+      function initSwiper () {
+        var mySwiper = new Swiper('.swiper-container', {
+          direction: 'horizontal',
+          loop: true,
+          pagination: '.swiper-pagination',
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+          scrollbar: '.swiper-scrollbar'
+        })
+      }
+      initSwiper()
+      window.addEventListener('hashchange', initSwiper, false)
+    </script>
+  </body>
 </html>
