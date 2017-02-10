@@ -1,10 +1,11 @@
 import React from 'react'
 import './Swiper.css'
+import './Swiper.styl'
 
 class Swiper extends React.Component {
   render () {
     return (
-      <div className='swiper-container' height={400} width={800}>
+      <div className='swiper-container' width={1420}>
         <div className='swiper-wrapper'>
           <div className='swiper-slide'>Slide 1</div>
           <div className='swiper-slide'>Slide 2</div>
