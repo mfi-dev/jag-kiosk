@@ -11,21 +11,6 @@
     <div id='app'></div>
     <script type='text/javascript' src='bundle.js'></script>
     <script type='text/javascript' src='assets/lib/swiper.min.js'></script>
-    <script type='text/javascript'>
-      function initSwiper () {
-        var mySwiper = new Swiper('.swiper-container', {
-          direction: 'horizontal',
-          loop: false,
-          pagination: '.swiper-pagination',
-          nextButton: '.swiper-button-next',
-          prevButton: '.swiper-button-prev',
-          scrollbar: '.swiper-scrollbar',
-          slidesOffsetBefore: 80,
-          slidesOffsetAfter: 80
-        })
-      }
-      initSwiper()
-      window.addEventListener('hashchange', initSwiper, false)
-    </script>
+    <script type='text/javascript' src='assets/js/global.js'></script>
   </body>
 </html>

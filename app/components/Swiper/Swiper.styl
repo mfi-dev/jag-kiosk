@@ -1,8 +1,21 @@
+@require('../../assets/styles/vars.styl')
+@require('../../assets/styles/fonts.css')
+
 .swiper-container
   margin-left auto
   margin-right auto
   position relative
   overflow hidden
   z-index 1
-  width 1500px
   min-height 645px
+
+.swiper-pagination-bullet
+  opacity 1
+  background $light-grey
+  border 1px solid #000
+  box-shadow: 3px 6px 23px rgba(0, 0, 0, .27)
+
+
+.swiper-pagination-bullet-active
+  opacity 1
+  background $gold

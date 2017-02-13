@@ -9,8 +9,10 @@ class EarlyYearsPage extends React.Component {
     return (
       <div className='Page EarlyYears SideBarPage'>
         <SideBar />
-        <h1>Early Years</h1>
-        <Swiper />
+        <div className='MainContent'>
+          <h1>Early Years</h1>
+          <Swiper />
+        </div>
       </div>
     )
   }

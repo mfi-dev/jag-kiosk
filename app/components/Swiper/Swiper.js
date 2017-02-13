@@ -5,7 +5,7 @@ import './Swiper.styl'
 class Swiper extends React.Component {
   render () {
     return (
-      <div className='swiper-container' width={1420}>
+      <div className='swiper-container'>
         <div className='swiper-wrapper'>
           <div className='swiper-slide'>Slide 1</div>
           <div className='swiper-slide'>Slide 2</div>

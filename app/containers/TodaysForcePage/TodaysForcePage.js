@@ -9,8 +9,10 @@ class TodaysForcePage extends React.Component {
     return (
       <div className='Page TodaysForce SideBarPage'>
         <SideBar />
-        <h1>Today's Force</h1>
-        <Swiper />
+        <div className='MainContent'>
+          <h1>Today's Force</h1>
+          <Swiper />
+        </div>
       </div>
     )
   }

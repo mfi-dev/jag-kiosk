@@ -9,8 +9,10 @@ class ModernEraPage extends React.Component {
     return (
       <div className='Page ModernEra SideBarPage'>
         <SideBar />
-        <h1>Modern Era</h1>
-        <Swiper />
+        <div className='MainContent'>
+          <h1>Modern Era</h1>
+          <Swiper />
+        </div>
       </div>
     )
   }
