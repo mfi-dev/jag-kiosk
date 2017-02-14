@@ -7,10 +7,11 @@ function initSwiper () {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     scrollbar: '.swiper-scrollbar',
-    slidesOffsetBefore: 20,
-    slidesOffsetAfter: 20
+    scrollbarHide: true,
+    setWrapperSize: true
   })
   mySwiper.pagination = true
+  mySwiper.scrollbarHide = true
 }
 initSwiper()
 window.addEventListener('hashchange', initSwiper, false)

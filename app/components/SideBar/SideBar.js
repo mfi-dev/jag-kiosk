@@ -8,7 +8,7 @@ class SideBar extends React.Component {
       <div className='SideBar'>
         <div className='SideBar__AirForce_Logo' />
         <div className='SideBar__Seal'>
-          <img width={220} height={220} src='../../assets/images/jag-seal.png' />
+          <img width={220} height={220} src='assets/images/jag-seal.png' />
         </div>
         <Link className='BackButton' to='/'>
           <div className='BackButton__Container'>
