@@ -1,15 +1,10 @@
 const electron = require('electron')
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
-const storage = require('electron-json-storage')
-let fs = require('fs')
 const path = require('path')
 const url = require('url')
 
 let mainWindow
-let EarlyYearsImages
-let ModernEraImages
-let TodaysForceImages
 
 function createWindow () {
   mainWindow = new BrowserWindow({
@@ -32,33 +27,6 @@ function createWindow () {
   mainWindow.on('closed', function () {
     mainWindow = null
   })
-  getImageData()
-}
-
-function getImageData () {
-  const imageLocations = [
-    'app/assets/images/EarlyYears',
-    'app/assets/images/ModernEra',
-    'app/assets/images/TodaysForce'
-  ]
-  imageLocations.forEach(location => {
-    let sectionName = location.substr((location.lastIndexOf('/') - location.length) + 1)
-    fs.readdir(location, function (err, items) {
-      let jsonImages = JSON.stringify(items)
-      switch (sectionName) {
-        case 'EarlyYears':
-          EarlyYearsImages = jsonImages
-          break
-        case 'ModernEra':
-          ModernEraImages = jsonImages
-          console.log(ModernEraImages)
-          break
-        case 'TodaysForce':
-          TodaysForceImages = jsonImages
-          break
-      }
-    })
-  })
 }
 
 app.on('ready', createWindow)
@@ -69,8 +37,8 @@ app.on('window-all-closed', function () {
   }
 })
 
-// app.on('activate', function () {
-//   if (mainWindow === null) {
-//     createWindow()
-//   }
-// })
+app.on('activate', function () {
+  if (mainWindow === null) {
+    createWindow()
+  }
+})

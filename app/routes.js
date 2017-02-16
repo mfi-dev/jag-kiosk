@@ -1,8 +1,6 @@
 import App from './containers/App'
 import HomePage from './containers/HomePage'
-import EarlyYearsPage from './containers/EarlyYearsPage'
-import ModernEraPage from './containers/ModernEraPage'
-import TodaysForcePage from './containers/TodaysForcePage'
+import {EarlyYearsPage, ModernEraPage, TodaysForcePage} from './containers/SwiperPages'
 
 export default([
   {

@@ -1,10 +1,10 @@
-{
-  "001.jpeg": "This is a cat. 001.",
-  "002.jpeg": "This is also a cat. 002.",
-  "003.jpeg": "Cat.",
-  "004.jpeg": "Not a Dog.",
-  "005.jpeg": "",
-  "006.jpeg": "Derp.",
-  "007.jpeg": "Cat Cat Cat 7",
-  "008.jpeg": ""
-}
+[
+  "001.jpeg",
+  "002.jpeg",
+  "003.jpeg",
+  "004.jpeg",
+  "005.jpeg",
+  "006.jpeg",
+  "007.jpeg",
+  "008.jpeg"
+]
