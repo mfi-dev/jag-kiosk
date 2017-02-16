@@ -23,5 +23,3 @@ SwiperPage.propTypes = {
 }
 
 export default SwiperPage
-
-// Boom Ash
