@@ -7,7 +7,7 @@ class Swiper extends React.Component {
   componentWillMount () {
     console.log(this.props.images)
     this.props.images.map(image => {
-      console.log(image)
+      console.log(image.imageFile)
     })
   }
 
