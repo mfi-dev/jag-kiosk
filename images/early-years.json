@@ -6,5 +6,9 @@
   {
     "imageFile": "002.jpeg",
     "Description": "This is also a cat. It's not as nice."
+  },
+  {
+    "imageFile": "003.jpeg",
+    "Description": "Derp."
   }
 ]

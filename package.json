@@ -5,7 +5,7 @@
   "main": "./app/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "babel-node dev-server.js",
+    "dev": "babel-node ./images/server.js & babel-node dev-server.js",
     "electron": "webpack && electron ."
   },
   "repository": {
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/mfi-dev/jag-kiosk#readme",
   "dependencies": {
     "autoprefixer": "^6.7.2",
+    "axios": "^0.15.3",
     "babel-preset-stage-2": "^6.22.0",
     "body-parser": "^1.16.0",
     "compression": "^1.6.2",
@@ -29,11 +30,15 @@
     "express": "^4.14.1",
     "express-cors": "0.0.3",
     "fastclick": "^1.0.6",
+    "fs": "0.0.1-security",
     "json-loader": "^0.5.4",
     "jsonfile": "^2.4.0",
     "path": "^0.12.7",
     "react": "^15.4.2",
     "react-addons-shallow-compare": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-promise": "^0.5.3",
     "stylus": "^0.54.5",
     "sync": "^0.2.5",
     "webpack": "1.14.0"

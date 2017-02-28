@@ -1,0 +1,14 @@
+[
+  {
+    "imageFile": "007.jpeg",
+    "Description": "This is a nice cat."
+  },
+  {
+    "imageFile": "008.jpeg",
+    "Description": "This is also a cat. It's not as nice."
+  },
+  {
+    "imageFile": "009.jpeg",
+    "Description": "Derp."
+  }
+]
