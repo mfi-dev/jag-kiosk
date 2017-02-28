@@ -1,18 +1,18 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import './Swiper.css'
 import './Swiper.styl'
 
 class Swiper extends React.Component {
+  componentWillMount () {
+    console.log(this.props.images)
+    this.props.images.map(image => {
+      console.log(image)
+    })
+  }
+
   render () {
-    // const imageHtml = this.props.images.map(image => {
-    //   return (
-    //     <div key={image} className='Swiper__Slide swiper-slide'>
-    //       <div className='Swiper__Slide__Content'>
-    //         <img className='Swiper__Image' src={this.props.imageDir + '/' + image} />
-    //       </div>
-    //     </div>
-    //   )
-    // })
+    // console.log('from swiper:', this.props.images.images)
     return (
       <div className='Swiper'>
         <div className='swiper-container'>
@@ -30,7 +30,13 @@ class Swiper extends React.Component {
 }
 
 Swiper.propTypes = {
-  imageDir: React.PropTypes.string.isRequired
+  images: React.PropTypes.any.isRequired
 }
 
-export default Swiper
+const mapStateToProps = (state) => {
+  return {
+    images: state.images
+  }
+}
+
+export default connect(mapStateToProps)(Swiper)

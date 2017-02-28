@@ -14,8 +14,8 @@ class SwiperPage extends React.Component {
       <div className='Page SideBarPage'>
         <SideBar />
         <div className='MainContent'>
-          <h1>{this.props.title}</h1>
-          <Swiper imageDir={'../../assets/images/' + this.props.tag} />
+          <h1>Derp</h1>
+          <Swiper images={this.props.images} />
         </div>
       </div>
     )
@@ -25,7 +25,14 @@ class SwiperPage extends React.Component {
 SwiperPage.propTypes = {
   tag: React.PropTypes.string.isRequired,
   title: React.PropTypes.string.isRequired,
-  fetchImages: React.PropTypes.func.isRequired
+  fetchImages: React.PropTypes.func.isRequired,
+  images: React.PropTypes.any.isRequired
 }
 
-export default connect(null, {fetchImages})(SwiperPage)
+const mapStateToProps = (state) => {
+  return {
+    images: [state.images]
+  }
+}
+
+export default connect(mapStateToProps, {fetchImages})(SwiperPage)
