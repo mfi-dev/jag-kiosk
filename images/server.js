@@ -6,20 +6,8 @@ import fs from 'fs'
 import path from 'path'
 
 const Router = Express.Router()
-Router.route('/early-years/json').get(function (req, res) {
-  const earlyYearsDataFile = path.join(__dirname, 'early-years.json')
-  const readable = fs.createReadStream(earlyYearsDataFile)
-  readable.pipe(res)
-})
-
-Router.route('/todays-force/json').get(function (req, res) {
-  const earlyYearsDataFile = path.join(__dirname, 'todays-force.json')
-  const readable = fs.createReadStream(earlyYearsDataFile)
-  readable.pipe(res)
-})
-
-Router.route('/modern-era/json').get(function (req, res) {
-  const earlyYearsDataFile = path.join(__dirname, 'modern-era.json')
+Router.route('/images/json').get(function (req, res) {
+  const earlyYearsDataFile = path.join(__dirname, 'images.json')
   const readable = fs.createReadStream(earlyYearsDataFile)
   readable.pipe(res)
 })

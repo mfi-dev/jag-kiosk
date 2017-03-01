@@ -1,52 +1,50 @@
 {
-  "early-years": [
+  "early_years": [
     {
       "imageFile": "001.jpeg",
-      "Description": "This is a nice cat."
+      "description": "This is a nice cat."
     },
     {
       "imageFile": "002.jpeg",
-      "Description": "This is also a cat. It's not as nice."
+      "description": "This is also a cat. It's not as nice."
     },
     {
       "imageFile": "003.jpeg",
-      "Description": "Derp."
+      "description": "Derp."
     }
   ],
 
 
 
-  "modern-era": [
+  "modern_era": [
     {
       "imageFile": "004.jpeg",
-      "Description": "This is a modern cat."
+      "description": "This is a modern cat."
     },
     {
       "imageFile": "005.jpeg",
-      "Description": "This is also a cat. It's not as nice."
+      "description": "This is also a cat. It's not as nice."
     },
     {
       "imageFile": "006.jpeg",
-      "Description": "Derp."
+      "description": "Derp."
     }
   ],
 
 
 
-  "todays-force": [
-    [
-      {
-        "imageFile": "007.jpeg",
-        "Description": "This is a cat from today."
-      },
-      {
-        "imageFile": "008.jpeg",
-        "Description": "This is also a cat. It's not as nice."
-      },
-      {
-        "imageFile": "009.jpeg",
-        "Description": "Derp."
-      }
-    ]
+  "todays_force": [
+    {
+      "imageFile": "007.jpeg",
+      "description": "This is a cat from today."
+    },
+    {
+      "imageFile": "008.jpeg",
+      "description": "This is also a cat. It's not as nice."
+    },
+    {
+      "imageFile": "009.jpeg",
+      "description": "Derp."
+    }
   ]
 }

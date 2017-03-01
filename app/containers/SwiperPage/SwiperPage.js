@@ -14,8 +14,8 @@ class SwiperPage extends React.Component {
       <div className='Page SideBarPage'>
         <SideBar />
         <div className='MainContent'>
-          <h1>Derp</h1>
-          <Swiper images={this.props.images} />
+          <h1>{this.props.title}</h1>
+          <Swiper images={this.props.images} tag={this.props.tag} />
         </div>
       </div>
     )
@@ -31,7 +31,7 @@ SwiperPage.propTypes = {
 
 const mapStateToProps = (state) => {
   return {
-    images: [state.images]
+    images: state.images
   }
 }
 
