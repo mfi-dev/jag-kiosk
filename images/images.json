@@ -11,12 +11,48 @@
     {
       "imageFile": "003.jpeg",
       "description": "Derp."
+    },
+    {
+      "imageFile": "004.jpeg",
+      "description": "This is a modern cat."
+    },
+    {
+      "imageFile": "005.jpeg",
+      "description": "This is also a cat. It's not as nice."
+    },
+    {
+      "imageFile": "006.jpeg",
+      "description": "Derp."
     }
   ],
 
 
 
   "modern_era": [
+    {
+      "imageFile": "004.jpeg",
+      "description": "This is a modern cat."
+    },
+    {
+      "imageFile": "005.jpeg",
+      "description": "This is also a cat. It's not as nice."
+    },
+    {
+      "imageFile": "006.jpeg",
+      "description": "Derp."
+    },
+    {
+      "imageFile": "004.jpeg",
+      "description": "This is a modern cat."
+    },
+    {
+      "imageFile": "005.jpeg",
+      "description": "This is also a cat. It's not as nice."
+    },
+    {
+      "imageFile": "006.jpeg",
+      "description": "Derp."
+    },
     {
       "imageFile": "004.jpeg",
       "description": "This is a modern cat."
@@ -44,6 +80,30 @@
     },
     {
       "imageFile": "009.jpeg",
+      "description": "Derp."
+    },
+    {
+      "imageFile": "004.jpeg",
+      "description": "This is a modern cat."
+    },
+    {
+      "imageFile": "005.jpeg",
+      "description": "This is also a cat. It's not as nice."
+    },
+    {
+      "imageFile": "006.jpeg",
+      "description": "Derp."
+    },
+    {
+      "imageFile": "004.jpeg",
+      "description": "This is a modern cat."
+    },
+    {
+      "imageFile": "005.jpeg",
+      "description": "This is also a cat. It's not as nice."
+    },
+    {
+      "imageFile": "006.jpeg",
       "description": "Derp."
     }
   ]
