@@ -1,8 +1,19 @@
+/* global $ */
 import React from 'react'
 import { Link } from 'react-router'
 import './SideBar.styl'
 
 class SideBar extends React.Component {
+  componentDidMount () {
+    $('.BackButton').click(function (e) {
+      e.preventDefault()
+      var href = $(this).attr('href')
+      $(this).addClass('active')
+      setTimeout(function () {
+        window.location = href
+      }, 200)
+    })
+  }
   render () {
     return (
       <div className='SideBar'>

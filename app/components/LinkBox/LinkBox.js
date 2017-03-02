@@ -1,9 +1,21 @@
+/* global $ */
 import React from 'react'
 import { Link } from 'react-router'
 import './LinkBox.styl'
 
 class LinkBox extends React.Component {
 // setTimeout(function () { window.location = url, 500 })
+
+  componentDidMount () {
+    $('.LinkBox').click(function (e) {
+      e.preventDefault()
+      var href = $(this).attr('href')
+      $(this).addClass('active')
+      setTimeout(function () {
+        window.location = href
+      }, 350)
+    })
+  }
 
   render () {
     return (
