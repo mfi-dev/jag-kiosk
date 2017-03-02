@@ -1,12 +1,52 @@
 import React from 'react'
 import SideBar from '../../components/SideBar'
 import Swiper from '../../components/Swiper'
-import { connect } from 'react-redux'
-import { fetchImages } from '../../actions/FETCH_IMAGES'
+import axios from 'axios'
 
+const jsonUrl = 'http://localhost:3030/images/json'
+const baseUrl = 'http://localhost:3030/'
 class SwiperPage extends React.Component {
+
+  constructor (props) {
+    super(props)
+    this.getImages = this.getImages.bind(this)
+    this.state = {
+      images: [],
+      loading: true,
+      error: null
+    }
+  }
+
   componentWillMount () {
-    this.props.fetchImages(this.props.tag)
+    this.getImages()
+  }
+
+  getImages () {
+    let page = this
+
+    let requestImages = new Promise((resolve, reject) => {
+      axios.get(jsonUrl)
+        .then(response => {
+          resolve(response.data)
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    })
+
+    Promise.all([requestImages]).then(imageArrays => {
+      page.setState({
+        loading: false,
+        images: imageArrays[0][this.props.tag]
+      })
+    })
+    .catch((error) => {
+      page.setState({
+        loading: false,
+        error: 'Unable to load images.'
+      })
+      console.log(error)
+    })
   }
 
   render () {
@@ -15,7 +55,7 @@ class SwiperPage extends React.Component {
         <SideBar />
         <div className='MainContent'>
           <h1>{this.props.title}</h1>
-          <Swiper images={this.props.images} tag={this.props.tag} />
+          <Swiper images={this.state.images} baseImageUrl={`${baseUrl}${this.props.tag}/`} />
         </div>
       </div>
     )
@@ -25,14 +65,7 @@ class SwiperPage extends React.Component {
 SwiperPage.propTypes = {
   tag: React.PropTypes.string.isRequired,
   title: React.PropTypes.string.isRequired,
-  fetchImages: React.PropTypes.func.isRequired,
-  images: React.PropTypes.any.isRequired
+  images: React.PropTypes.array
 }
 
-const mapStateToProps = (state) => {
-  return {
-    images: state.images
-  }
-}
-
-export default connect(mapStateToProps, {fetchImages})(SwiperPage)
+export default SwiperPage

@@ -5,14 +5,13 @@ const path = require('path')
 const url = require('url')
 
 let mainWindow
-
 function createWindow () {
   mainWindow = new BrowserWindow({
     width: 1920,
     height: 1080,
     kiosk: false,
     closable: true,
-    enableLargerThanScreen: true,
+    enableLargerThanScreen: false,
     autoHideMenuBar: true,
     titleBarStyle: 'hidden',
     zoomToPageWidth: true,
@@ -23,7 +22,7 @@ function createWindow () {
     protocol: 'file:',
     slashes: true
   }))
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
   mainWindow.on('closed', function () {
     mainWindow = null
   })

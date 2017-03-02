@@ -1,4 +1,4 @@
-/* global Swiper, $, featherlight */
+/* global Swiper, $ */
 function initSwiper () {
   var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',

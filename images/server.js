@@ -22,9 +22,9 @@ App.use(CORS({
     'http://localhost:3030'
   ]
 }))
-App.use('/todays-force', Express.static(path.join(__dirname, '/todays-force')))
-App.use('/early-years', Express.static(path.join(__dirname, '/early-years')))
-App.use('/modern-era', Express.static(path.join(__dirname, '/modern-era')))
+App.use('/todays_force', Express.static(path.join(__dirname, '/todays_force')))
+App.use('/early_years', Express.static(path.join(__dirname, '/early_years')))
+App.use('/modern_era', Express.static(path.join(__dirname, '/modern_era')))
 App.use('/', Router)
 
 App.listen(3030)

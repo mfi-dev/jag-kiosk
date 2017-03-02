@@ -1,35 +1,30 @@
 /* global initSwiper, $ */
 import React from 'react'
+import FastClick from 'fastclick'
 import './Swiper.css'
 import './Featherlight.css'
 import './Swiper.styl'
 
 class Swiper extends React.Component {
-  componentDidUpdate () {
-    initSwiper()
+  componentDidMount () {
+    FastClick.attach(document.body)
   }
 
-  handleImageClick (imageId) {
-    $('#' + imageId).featherlight()
+  componentDidUpdate () {
+    initSwiper()
+    if (this.props.images.length) {
+      this.props.images.map((image, index) => {
+        console.log('here')
+        $('#slide' + index).featherlight()
+      })
+    }
   }
 
   render () {
-    let images = []
-    switch (this.props.tag) {
-      case 'early-years':
-        images = this.props.images.early_years
-        break
-      case 'modern-era':
-        images = this.props.images.modern_era
-        break
-      case 'todays-force':
-        images = this.props.images.todays_force
-        break
-    }
-    const swiperSlides = (images)
-      ? images.map((image, index) => {
+    const swiperSlides = (this.props.images.length)
+      ? this.props.images.map((image, index) => {
         const style = {
-          backgroundImage: `url(http://localhost:3030/${this.props.tag}/${image.imageFile})`
+          backgroundImage: `url(${this.props.baseImageUrl}${image.imageFile})`
         }
         const id = `slide${index}`
         return (
@@ -39,25 +34,69 @@ class Swiper extends React.Component {
             data-featherlight={`#image${index}`}
             style={style}
             className='swiper-slide'
-            onClick={::this.handleImageClick(id)}>
+          >
             <div className='Swiper__ImageDescription'>{image.description}</div>
+
           </div>
         )
       })
       : <div>No images available</div>
 
-    const swiperImages = (images)
-      ? images.map((image, index) => {
+    const swiperImages = (this.props.images.length)
+      ? this.props.images.map((image, index) => {
         const id = `image${index}`
         return (
-          <img className='Swiper__LightboxImage' key={id} id={id} src={`http://localhost:3030/${this.props.tag}/${image.imageFile}`} />
+          <div className='Lightbox' id={id} key={id}>
+            <div className='Lightbox__ImageContainer'>
+              <img className='Lightbox__Image' src={`${this.props.baseImageUrl}${image.imageFile}`} />
+              <div className='LightBox__Description'>{image.description}</div>
+            </div>
+          </div>
         )
       })
-      : <div>No Images Available</div>
+      : ''
+    //
+    // this.props.images.map((image, index) => {
+    //   $('#image' + index).featherlight()
+    // })
+
+    // let requestImages = new Promise((resolve, reject) => {
+    //   axios.get(jsonUrl)
+    //     .then(response => {
+    //       resolve(response.data)
+    //     })
+    //     .catch(error => {
+    //       console.log(error)
+    //     })
+    // })
+    //
+    // Promise.all([requestImages]).then(imageArrays => {
+    //   page.setState({
+    //     loading: false,
+    //     images: imageArrays[0][this.props.tag]
+    //   })
+    // })
+    // .catch((error) => {
+    //   page.setState({
+    //     loading: false,
+    //     error: 'Unable to load images.'
+    //   })
+    //   console.log(error)
+    // })
+    //
+    // let swiperSlides
+    // let swiperImages
+    //
+    // const getSlidesHtml = new Promise((resolve, reject) => {
+    //   const SwiperSlides
+    // })
 
     return (
       <div className='Swiper'>
         <div className='Swiper__Nav Swiper__Nav--Prev' />
+        <div className='Swiper__Images'>
+          {swiperImages}
+        </div>
         <div className='swiper-container'>
           <div className='swiper-wrapper'>
             {swiperSlides}
@@ -66,9 +105,6 @@ class Swiper extends React.Component {
         </div>
         <div className='swiper-pagination' />
         <div className='Swiper__Nav Swiper__Nav--Next' />
-        <div className='Swiper__Images'>
-          {swiperImages}
-        </div>
       </div>
     )
   }
@@ -76,7 +112,7 @@ class Swiper extends React.Component {
 
 Swiper.propTypes = {
   images: React.PropTypes.any.isRequired,
-  tag: React.PropTypes.string.isRequired
+  baseImageUrl: React.PropTypes.string.isRequired
 }
 
 export default Swiper

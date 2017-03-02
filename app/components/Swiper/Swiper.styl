@@ -36,6 +36,22 @@ $content-area-padding = 80px
   &__LightboxImage
     max-width 1500px
 
+.LightBox
+  max-width 1500px
+  position relative
+
+  &__Description
+    position absolute
+    bottom 0
+    width calc(100% - 50px)
+    padding 20px 0
+    background-color $black-alpha-dark
+    text-align center
+
+/* featherlight overrides */
+.featherlight .featherlight-content
+  overflow hidden
+
 /* swiper style overrides */
 .swiper-container
   margin-left auto
@@ -44,7 +60,7 @@ $content-area-padding = 80px
   overflow hidden
   z-index 1
   height 645px
-  width 1400px
+  width 1200px
 
 .swiper-wrapper
   text-align center

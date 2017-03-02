@@ -4,7 +4,7 @@ import SwiperPage from '../SwiperPage'
 class ModernEraPage extends React.Component {
   render () {
     return (
-      <SwiperPage title='Modern Era' tag='modern-era' />
+      <SwiperPage title='Modern Era' tag='modern_era' />
     )
   }
 }
@@ -12,7 +12,7 @@ class ModernEraPage extends React.Component {
 class TodaysForcePage extends React.Component {
   render () {
     return (
-      <SwiperPage title="Today's Force" tag='todays-force' />
+      <SwiperPage title="Today's Force" tag='todays_force' />
     )
   }
 }
@@ -20,7 +20,7 @@ class TodaysForcePage extends React.Component {
 class EarlyYearsPage extends React.Component {
   render () {
     return (
-      <SwiperPage title='Early Years' tag='early-years' />
+      <SwiperPage title='Early Years' tag='early_years' />
     )
   }
 }
