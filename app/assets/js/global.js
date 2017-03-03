@@ -11,7 +11,8 @@ function initSwiper () {
     setWrapperSize: true,
     slidesPerView: 3,
     slidesPerGroup: 3,
-    spaceBetween: 10
+    spaceBetween: 10,
+    resistance: false
   })
   mySwiper.pagination = true
   mySwiper.scrollbarHide = true

@@ -14,7 +14,6 @@ class Swiper extends React.Component {
     initSwiper()
     if (this.props.images.length) {
       this.props.images.map((image, index) => {
-        console.log('here')
         $('#slide' + index).featherlight()
       })
     }
@@ -45,51 +44,23 @@ class Swiper extends React.Component {
     const swiperImages = (this.props.images.length)
       ? this.props.images.map((image, index) => {
         const id = `image${index}`
+        const style = {
+          'backgroundImage': `url(${this.props.baseImageUrl}${image.imageFile})`,
+          'height': 850,
+          'width': 1200,
+          'backgroundSize': 'cover',
+          'backgroundPosition': 'center center'
+        }
         return (
           <div className='Lightbox' id={id} key={id}>
             <div className='Lightbox__ImageContainer'>
-              <img className='Lightbox__Image' src={`${this.props.baseImageUrl}${image.imageFile}`} />
+              <div className='Lightbox__Image' style={style} />
               <div className='LightBox__Description'>{image.description}</div>
             </div>
           </div>
         )
       })
       : ''
-    //
-    // this.props.images.map((image, index) => {
-    //   $('#image' + index).featherlight()
-    // })
-
-    // let requestImages = new Promise((resolve, reject) => {
-    //   axios.get(jsonUrl)
-    //     .then(response => {
-    //       resolve(response.data)
-    //     })
-    //     .catch(error => {
-    //       console.log(error)
-    //     })
-    // })
-    //
-    // Promise.all([requestImages]).then(imageArrays => {
-    //   page.setState({
-    //     loading: false,
-    //     images: imageArrays[0][this.props.tag]
-    //   })
-    // })
-    // .catch((error) => {
-    //   page.setState({
-    //     loading: false,
-    //     error: 'Unable to load images.'
-    //   })
-    //   console.log(error)
-    // })
-    //
-    // let swiperSlides
-    // let swiperImages
-    //
-    // const getSlidesHtml = new Promise((resolve, reject) => {
-    //   const SwiperSlides
-    // })
 
     return (
       <div className='Swiper'>
