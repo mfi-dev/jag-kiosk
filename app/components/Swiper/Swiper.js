@@ -23,12 +23,12 @@ class Swiper extends React.Component {
     const swiperSlides = (this.props.images.length)
       ? this.props.images.map((image, index) => {
         const style = {
-          backgroundImage: `url(${this.props.baseImageUrl}${image.imageFile})`
+          backgroundImage: `url(${this.props.baseImageUrl}${image.filename})`
         }
         const id = `slide${index}`
         return (
           <div
-            key={image.imageFile + index}
+            key={image.filename + index}
             id={id}
             data-featherlight={`#image${index}`}
             style={style}
@@ -45,7 +45,7 @@ class Swiper extends React.Component {
       ? this.props.images.map((image, index) => {
         const id = `image${index}`
         const style = {
-          'backgroundImage': `url(${this.props.baseImageUrl}${image.imageFile})`,
+          'backgroundImage': `url(${this.props.baseImageUrl}${image.filename})`,
           'height': 850,
           'width': 1200,
           'backgroundSize': 'cover',

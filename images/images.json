@@ -1,110 +1,583 @@
 {
   "early_years": [
     {
-      "imageFile": "001.jpeg",
-      "description": "This is a nice cat."
+      "filename": "1971_majcom_paralegal_conference.jpg",
+      "description": "MAJCOM Paralegal Conference (1971)"
     },
+
     {
-      "imageFile": "001.jpeg",
-      "description": "This is also a cat. It's not as nice."
+      "filename": "a1c_steve_stevens_at_phan_rang_air_base,_vietnam_-_1970.jpg",
+      "description": "A1C Steve Stevens at Phan Rang Air Base, Vietnam (1970)"
     },
+
     {
-      "imageFile": "001.jpeg",
-      "description": "Derp."
+      "filename": "b-52_stratofortress_-_introduced_1955.jpg",
+      "description": "B-52 Stratorfortress - Introduced 1955"
     },
+
     {
-      "imageFile": "004.jpeg",
-      "description": "This is a modern cat."
+      "filename": "benjamin_oliver_davis,_jr._-_first_african-american_usaf_general_officer.jpg",
+      "description": "Benjamin Oliver Davis, Jr. - First african-american USAF General Officer"
     },
+
     {
-      "imageFile": "005.jpeg",
-      "description": "This is also a cat. It's not as nice."
+      "filename": "c-119_paratroopers_in_korean_war.jpg",
+      "description": "C-119 Paratroopers in Korean War"
     },
+
     {
-      "imageFile": "006.jpeg",
-      "description": "Derp."
+      "filename": "c-130_hercules_-_introduced_1956.jpg",
+      "description": "C-130 Hercules - Introduced 1956"
+    },
+
+    {
+      "filename": "cmsgt_steve_swigonski_retires_-_1972.jpg",
+      "description": "CMSGT Steve Swigonski retires (1972)"
+    },
+
+    {
+      "filename": "court-martial_-_1960s.jpg",
+      "description": "Court martial (1960s)"
+    },
+
+    {
+      "filename": "early_court-martial.jpg",
+      "description": "Early Court Martial"
+    },
+
+    {
+      "filename": "early_court_reporter_training.jpg",
+      "description": "Early court reporter training"
+    },
+
+    {
+      "filename": "early_paralegal_training.jpg",
+      "description": "Early paralegal training"
+    },
+
+    {
+      "filename": "early_paralegals.jpg",
+      "description": "Early paralegals"
+    },
+
+    {
+      "filename": "early_test_pilot.jpg",
+      "description": "Early test pilot"
+    },
+
+    {
+      "filename": "f-100_super_sabre_strikes_target_in_vietnam.jpg",
+      "description": "F-100 Super Sabre strikes target in Vietnam"
+    },
+
+    {
+      "filename": "former_tjag_maj_gen_james_cheney.jpg",
+      "description": "Former TJAG Major General James Cheney"
+    },
+
+    {
+      "filename": "former_tjag_maj_gen_reginald_harmon_-_1950s.jpg",
+      "description": "Former TJAG Major General Reginald Harmon (1950s)"
+    },
+
+    {
+      "filename": "graduating_paralegal_class_with_chief_swigonski.jpg",
+      "description": "Graduating paralegal class with Chief Swigonski"
+    },
+
+    {
+      "filename": "jag_argues_before_appeals_court.jpg",
+      "description": "JAG argues before appeals court"
+    },
+
+    {
+      "filename": "jag_conference_-_1951.jpg",
+      "description": "JAG Conference (1951)"
+    },
+
+    {
+      "filename": "jags_at_court_of_military_appeals.jpg",
+      "description": "JAGs at court of military appeals"
+    },
+
+    {
+      "filename": "jasoc_class_photo_-_1952.jpg",
+      "description": "JASOC class photo"
+    },
+
+    {
+      "filename": "jasoc_students_in_front_of_supreme_court_-_1962.jpg",
+      "description": "JASOC students in front of supreme court (1962)"
+    },
+
+    {
+      "filename": "maj_gen_jeanne_holm_-_first_female_usaf_general.jpg",
+      "description": "Major General Jeanne Holm - First female USAF General"
+    },
+
+    {
+      "filename": "maj_morehouse_and_legal_staff_of_bien_hoa_air_base,_vietnam_-_1968.jpg",
+      "description": "Major Morehouse and legal staff of Bien Hoa air base, Vietnam (1968)"
+    },
+
+    {
+      "filename": "majcom_sja_conference_-_1962.jpg",
+      "description": "MAJCOM SJA Conference (1962)"
+    },
+
+    {
+      "filename": "maxwell_afb_main_gate_-_1950s.jpg",
+      "description": "Maxwell AFB main gate (1950s)"
+    },
+
+    {
+      "filename": "paralegal_class_photo_-_1972.jpg",
+      "description": "Paralegal class photo (1972)"
+    },
+
+    {
+      "filename": "tjag_conference_-__1957.jpg",
+      "description": "TJAG conference (1957)"
+    },
+
+    {
+      "filename": "tuskegee_airmen.jpg",
+      "description": "Tuskegee airmen"
+    },
+
+    {
+      "filename": "u-2_dragon_lady_-_introduced_1957.jpg",
+      "description": "U-2 Dragon Lady - Introduced 1957"
+    },
+
+    {
+      "filename": "vietnam_-_1967.jpg",
+      "description": "Vietnam (1967)"
     }
+
   ],
-
-
 
   "modern_era": [
     {
-      "imageFile": "004.jpeg",
-      "description": "This is a modern cat."
+      "filename": "afjags_1989.jpg",
+      "description": "Air Force JAGs - 1989"
     },
+
     {
-      "imageFile": "005.jpeg",
-      "description": "This is also a cat. It's not as nice."
+      "filename": "afjags_1995.jpg",
+      "description": "Air Force JAGs - 1995"
     },
+
     {
-      "imageFile": "006.jpeg",
-      "description": "Derp."
+      "filename": "afjags_dedication.jpg",
+      "description": "Air Force JAGs dedication"
     },
+
     {
-      "imageFile": "004.jpeg",
-      "description": "This is a modern cat."
+      "filename": "afjags_during_construction.jpg",
+      "description": "Air Force JAGs during construction"
     },
+
     {
-      "imageFile": "005.jpeg",
-      "description": "This is also a cat. It's not as nice."
+      "filename": "afjags_under_construction.jpg",
+      "description": "Air Force JAGs under construction"
     },
+
     {
-      "imageFile": "006.jpeg",
-      "description": "Derp."
+      "filename": "chief_swigonski_at_afjags_dedication_-_1993.jpg",
+      "description": "Chief Swigonski at the Air Force JAGS dedication (1993)"
     },
+
     {
-      "imageFile": "004.jpeg",
-      "description": "This is a modern cat."
+      "filename": "court_reporter_using_steno_mask.jpg",
+      "description": "Court reporter using a steno mask"
     },
+
     {
-      "imageFile": "005.jpeg",
-      "description": "This is also a cat. It's not as nice."
+      "filename": "f-15c_eagle_-_introduced_1976.jpg",
+      "description": "F-15C Eagle - Introduced 1976"
     },
+
     {
-      "imageFile": "006.jpeg",
-      "description": "Derp."
+      "filename": "f-15s_and_f-16s_during_gulf_war.jpg",
+      "description": "F-15s and F-16s during Gulf War"
+    },
+
+    {
+      "filename": "f-16c_fighting_falcon_-_introduced_1978.jpg",
+      "description": "F-16C Fighting Falcon - Introduced 1978"
+    },
+
+    {
+      "filename": "homestead_claims_center.jpg",
+      "description": "The Homestead Claims Center"
+    },
+
+    {
+      "filename": "jag_and_civilian_work_on_early_computer.jpg",
+      "description": "JAG and civilian working on an early computer"
+    },
+
+    {
+      "filename": "jag_arguing_before_appellate_court.jpg",
+      "description": "JAG arguing before an appellate court"
+    },
+
+    {
+      "filename": "jag_in_the_phillipines.jpg",
+      "description": "JAG in the Phillipines"
+    },
+
+    {
+      "filename": "jag_na_na_-_1984.jpg",
+      "description": "JAG Na Na - 1984"
+    },
+
+    {
+      "filename": "jag_researches.jpg",
+      "description": "JAG Researches"
+    },
+
+    {
+      "filename": "jag_school_moot_court_-_1970s.jpg",
+      "description": "JAG School moot court - 1970s"
+    },
+
+    {
+      "filename": "kc-10_extender_-_introduced_1981.jpg",
+      "description": "KC-10 Extender - Introduced 1981"
+    },
+
+    {
+      "filename": "maj_gen_morehouse_and_rep_dickinson_at_afjags_groundbreaking.jpg",
+      "description": "Major General Morehouse and Rep. Dickinson at Air Force JAGs groundbreaking"
+    },
+
+    {
+      "filename": "majcom_paralegal_conference.jpg",
+      "description": "MajCom Paralegal Conference"
+    },
+
+    {
+      "filename": "moot_court_-_1993.png",
+      "description": "Moot Court (1993)"
+    },
+
+    {
+      "filename": "original_afjags_lodging_during_construction.jpg",
+      "description": "Original Air Force JAGs lodging during construction"
+    },
+
+    {
+      "filename": "original_afjags_lodging_under_construction.jpg",
+      "description": "Original Air Force JAGs lodging during construction"
+    },
+
+    {
+      "filename": "paralegal_court_reporter_school.jpg",
+      "description": "Paralegal court reporter school"
+    },
+
+    {
+      "filename": "paralegal_court_reporter_training.jpg",
+      "description": "Paralegal court reporter training"
+    },
+
+    {
+      "filename": "paralegal_executive_conference.jpg",
+      "description": "Paralegal Executive Conference"
+    },
+
+    {
+      "filename": "paralegal_honor_graduate.jpg",
+      "description": "Paralegal Honor Graduate"
+    },
+
+    {
+      "filename": "paralegals_at_afjags.jpg",
+      "description": "Paralegals at Air Force JAGs"
     }
   ],
 
-
-
   "todays_force": [
     {
-      "imageFile": "007.jpeg",
-      "description": "This is a cat from today."
+      "filename": "a-10_flies_in_operation_enduring_freedom.jpg",
+      "description": "A-10 flies in Operation Enduring Freedom"
     },
+
     {
-      "imageFile": "008.jpeg",
-      "description": "This is also a cat. It's not as nice."
+      "filename": "afjags_heritage_room.jpg",
+      "description": "Air Force JAGs heritage room"
     },
+
     {
-      "imageFile": "009.jpeg",
-      "description": "Derp."
+      "filename": "afjags_moot_court-martial.jpg",
+      "description": "Air Force JAGs moot court martial"
     },
+
     {
-      "imageFile": "004.jpeg",
-      "description": "This is a modern cat."
+      "filename": "air_force_court_of_criminal_appeals_outreach_argument.jpg",
+      "description": "Air Force court of criminal appeals outreach argument"
     },
+
     {
-      "imageFile": "005.jpeg",
-      "description": "This is also a cat. It's not as nice."
+      "filename": "b-2_spirit_-_introduced_1997.jpg",
+      "description": "B-2 Spirit - Introduced 1997"
     },
+
     {
-      "imageFile": "006.jpeg",
-      "description": "Derp."
+      "filename": "brig_gen_lepper_at_controls_of_c-130j.jpg",
+      "description": "Brig General Lepper at controls of C-130J"
     },
+
     {
-      "imageFile": "004.jpeg",
-      "description": "This is a modern cat."
+      "filename": "c-17_globemaster_iii_-_introduced_1995.jpg",
+      "description": "C-17 Globemaster III - Introduced 1995"
     },
+
     {
-      "imageFile": "005.jpeg",
-      "description": "This is also a cat. It's not as nice."
+      "filename": "caoc_operations.jpg",
+      "description": "CAOC Operations"
     },
+
     {
-      "imageFile": "006.jpeg",
-      "description": "Derp."
+      "filename": "chiefs_group.jpg",
+      "description": "Chiefs group"
+    },
+
+    {
+      "filename": "commandant_conducts_jasoc_open_ranks_inspection.jpg",
+      "description": "Commandant conducts JASOC open ranks inspection"
+    },
+
+    {
+      "filename": "court_martial_preparation.jpg",
+      "description": "Court martial preparation"
+    },
+
+    {
+      "filename": "deployed_jag.jpg",
+      "description": "Deployed JAG"
+    },
+
+    {
+      "filename": "f-22a_raptor_-_introduced_2005.jpg",
+      "description": "F-22A Raptor - Introduced 2005"
+    },
+
+    {
+      "filename": "f-35a_lighting_ii_-_introduced_2016.jpg",
+      "description": "F-35A Lighting II - Introduced 2016"
+    },
+
+    {
+      "filename": "fromer_tjag_lt_gen_rives_promotion_ceremony.jpg",
+      "description": "Former TJAG Lt. General Rives' promotion ceremony"
+    },
+
+    {
+      "filename": "gen_lori_robinson_-_first_female_unified_combatant_commander.jpg",
+      "description": "General Lori Robinson - First female unified combatant commander"
+    },
+
+    {
+      "filename": "hh-60_pave_hawk_during_operation_iraqi_freedom.png",
+      "description": "HH-60 Pave Hawk during Operation Iraqi Freedom"
+    },
+
+    {
+      "filename": "honor_guard.jpg",
+      "description": "Honor Guard"
+    },
+
+    {
+      "filename": "jag-paralegal_field_training.jpg",
+      "description": "JAG paralegal field training"
+    },
+
+    {
+      "filename": "jag_during_training_exercise.jpg",
+      "description": "JAG during training exercise"
+    },
+
+    {
+      "filename": "jag_in_deployed_location.jpg",
+      "description": "JAG in deployed location"
+    },
+
+    {
+      "filename": "jag-paralegal_field_training.jpg",
+      "description": "JAG paralegal field training"
+    },
+
+    {
+      "filename": "jag_provides_legal_assistance.jpg",
+      "description": "JAG provides legal assistance"
+    },
+
+    {
+      "filename": "jag_recieves_afsc_badge.jpg",
+      "description": "JAG recieves AFSC badge"
+    },
+
+    {
+      "filename": "jag_swears_in_witness.jpg",
+      "description": "JAG swears in witness"
+    },
+
+    {
+      "filename": "jag_teaching_senior_leaders.jpg",
+      "description": "JAG teaching senior leaders"
+    },
+
+    {
+      "filename": "jags_confer_during_court-martial.jpg",
+      "description": "JAGs confer during court martial"
+    },
+
+    {
+      "filename": "jags_in_a_court-martial.jpg",
+      "description": "JAGs in a court martial"
+    },
+
+    {
+      "filename": "jasoc_in_session.jpg",
+      "description": "JASOC in session"
+    },
+
+    {
+      "filename": "jasoc_moot_court_-_1993.png",
+      "description": "JASOC moot court (1993)"
+    },
+
+    {
+      "filename": "jasoc_open_ranks_inspection.jpg",
+      "description": "JASOC open ranks inspection"
+    },
+
+    {
+      "filename": "jasoc_open_ranks_inspections.jpg",
+      "description": "JASOC open ranks inspection"
+    },
+
+    {
+      "filename": "jasoc_seminar.jpg",
+      "description": "JASOC Seminar"
+    },
+
+    {
+      "filename": "jasoc_small_group_discussion.jpg",
+      "description": "JASOC small group discussion"
+    },
+
+    {
+      "filename": "jasoc_sporting_event.jpg",
+      "description": "JASOC sporting event"
+    },
+
+    {
+      "filename": "jasoc_student_examines_witness.jpg",
+      "description": "JASOC student examines witness"
+    },
+
+    {
+      "filename": "jasoc_students.jpg",
+      "description": "JASOC students"
+    },
+
+    {
+      "filename": "jasoc_students_pt.jpg",
+      "description": "JASOC students PT"
+    },
+
+    {
+      "filename": "jasoc_team_building.jpg",
+      "description": "JASOC team building"
+    },
+
+    {
+      "filename": "legal_office_in_front_of_mt._rushmore.jpg",
+      "description": "Legal office in front of Mount Rushmore"
+    },
+
+    {
+      "filename": "paralegal_apprentice_course_seminar.jpg",
+      "description": "Paralegal apprentice course seminar"
+    },
+
+    {
+      "filename": "paralegal_apprentice_course_students.jpg",
+      "description": "Paralegal apprentice course students"
+    },
+
+    {
+      "filename": "paralegal_apprentice_course_students_with_djag.jpg",
+      "description": "Paralegal apprentice course students with DJAG"
+    },
+
+    {
+      "filename": "paralegal_assisting_during_court-martial.jpg",
+      "description": "Paralegal assisting during court martial"
+    },
+
+    {
+      "filename": "paralegal_craftsman_course__in_the_courtyard.jpg",
+      "description": "Paralegal craftsman course in the courtyard"
+    },
+
+    {
+      "filename": "paralegal_in_pre-deployment_training.jpg",
+      "description": "Paralegal in pre-deployment training"
+    },
+
+    {
+      "filename": "paralegal_promotes.jpg",
+      "description": "Paralegal promotes"
+    },
+
+    {
+      "filename": "paralegal_students_during_training_exercise.jpg",
+      "description": "Paralegal students during training exercise"
+    },
+
+    {
+      "filename": "paralegal_with_case_files.jpg",
+      "description": "Paralegal with case files"
+    },
+
+    {
+      "filename": "paralegals_during_training_exercise.jpg",
+      "description": "Paralegals during field exercise"
+    },
+
+    {
+      "filename": "paralegals_during_field_exercise.jpg",
+      "description": "Paralegals during field exercise"
+    },
+
+    {
+      "filename": "paralegals_on_mobility_line.jpg",
+      "description": "Paralegals on mobility line"
+    },
+
+    {
+      "filename": "president_barack_obama_repeals_dont_ask_dont_tell.jpg",
+      "description": "President Barack Obama repeals Don't Ask Don't Tell"
+    },
+
+    {
+      "filename": "pretrial_conference.jpg",
+      "description": "Pre-trial conference"
+    },
+
+    {
+      "filename": "secretary_rice_visits_deployed_troops.jpg",
+      "description": "Secretary Rice visits deployed troops"
+    },
+
+    {
+      "filename": "student_listens_to_legal_briefing.jpg",
+      "description": "Student listens to legal briefing"
     }
   ]
 }
