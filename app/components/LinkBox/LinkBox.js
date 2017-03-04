@@ -4,8 +4,6 @@ import { Link } from 'react-router'
 import './LinkBox.styl'
 
 class LinkBox extends React.Component {
-// setTimeout(function () { window.location = url, 500 })
-
   componentDidMount () {
     $('.LinkBox').click(function (e) {
       e.preventDefault()

@@ -112,7 +112,8 @@
 
     {
       "filename": "maj_gen_jeanne_holm_-_first_female_usaf_general.jpg",
-      "description": "Major General Jeanne Holm - First female USAF General"
+      "description": "Major General Jeanne Holm - First female USAF General",
+      "format": "tall"
     },
 
     {
@@ -225,7 +226,8 @@
 
     {
       "filename": "jag_in_the_phillipines.jpg",
-      "description": "JAG in the Phillipines"
+      "description": "JAG in the Phillipines",
+      "format": "tall"
     },
 
     {

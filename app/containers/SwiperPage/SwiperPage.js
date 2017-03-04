@@ -5,6 +5,7 @@ import axios from 'axios'
 
 const jsonUrl = 'http://localhost:3030/images/json'
 const baseUrl = 'http://localhost:3030/'
+
 class SwiperPage extends React.Component {
 
   constructor (props) {

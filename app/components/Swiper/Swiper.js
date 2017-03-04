@@ -1,8 +1,8 @@
 /* global initSwiper, $ */
 import React from 'react'
 import FastClick from 'fastclick'
-import './Swiper.css'
 import './Featherlight.css'
+import './Swiper.css'
 import './Swiper.styl'
 
 class Swiper extends React.Component {
@@ -39,18 +39,25 @@ class Swiper extends React.Component {
           </div>
         )
       })
-      : <div>No images available</div>
+      : <div>Loading images...</div>
 
     const swiperImages = (this.props.images.length)
       ? this.props.images.map((image, index) => {
         const id = `image${index}`
-        const style = {
+
+        let style = {
           'backgroundImage': `url(${this.props.baseImageUrl}${image.filename})`,
           'height': 850,
           'width': 1200,
           'backgroundSize': 'cover',
           'backgroundPosition': 'center center'
         }
+
+        if (image.format === 'tall') {
+          style.height = 800
+          style.width = 500
+        }
+
         return (
           <div className='Lightbox' id={id} key={id}>
             <div className='Lightbox__ImageContainer'>

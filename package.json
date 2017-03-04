@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "babel-node ./images/server.js & babel-node dev-server.js",
-    "start": "babel-node ./images/server.js & electron ."
+    "start": "webpack && electron .",
+    "load-images": "babel-node ./images/server.js &"
   },
   "repository": {
     "type": "git",
