@@ -33,24 +33,24 @@ $(document).bind('touchstart click', function (e) {
 document.addEventListener('mousewheel', e => {
   if (e.ctrlKey) e.preventDefault()
 })
+// 
+// $('.ScreenSaver').bind('touchstart click', function (e) {
+//   e.stopPropagation()
+//   e.preventDefault()
+//   $('.ScreenSaver').removeClass('active')
+// })
 
-$('.ScreenSaver').bind('touchstart click', function (e) {
-  e.stopPropagation()
-  e.preventDefault()
-  $('.ScreenSaver').removeClass('active')
-})
-
-setInterval(function () {
-  if (new Date().getTime() - time >= timeout) {
-    var loc = window.location.href
-    var index = loc.indexOf('/#/') + 1
-    if (index < loc.length - 3) {
-      window.location = loc.substring(0, index)
-    } else {
-      $('.ScreenSaver').addClass('active')
-    }
-  }
-}, checkTime)
+// setInterval(function () {
+//   if (new Date().getTime() - time >= timeout) {
+//     var loc = window.location.href
+//     var index = loc.indexOf('/#/') + 1
+//     if (index < loc.length - 3) {
+//       window.location = loc.substring(0, index)
+//     } else {
+//       $('.ScreenSaver').addClass('active')
+//     }
+//   }
+// }, checkTime)
 
 // function startScreenSaver () {
 //
