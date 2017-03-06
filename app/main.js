@@ -5,6 +5,8 @@ const path = require('path')
 const url = require('url')
 
 let mainWindow
+app.commandLine.appendSwitch('--enable-viewport-meta', 'true')
+
 function createWindow () {
   mainWindow = new BrowserWindow({
     width: 1920,
@@ -29,7 +31,6 @@ function createWindow () {
 }
 
 app.on('ready', createWindow)
-
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') {
     app.quit()
