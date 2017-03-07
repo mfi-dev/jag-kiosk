@@ -2,6 +2,7 @@
 'use strict'
 
 import React from 'react'
+import { Link } from 'react-router'
 import Clock from '../Clock'
 import axios from 'axios'
 
@@ -94,6 +95,7 @@ class ScreenSaver extends React.Component {
     : <h4>Loading Images</h4>
     return (
       <div className='Page ScreenSaverContainer'>
+        <Link className='BackLink' to='/'>Back</Link>
         <Clock />
         <div id='ScreenSaver' className='ScreenSaver smoothslides'>
           {imageHtml}

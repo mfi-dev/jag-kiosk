@@ -21,9 +21,16 @@ class Clock extends React.Component {
   }
 
   componentDidMount () {
-    window.setInterval(function () {
+    const intervalId = window.setInterval(function () {
       this.setTime()
     }.bind(this), 1000)
+    this.setState({
+      intervalId: intervalId
+    })
+  }
+
+  componentWillUnmount () {
+    window.clearInterval(this.state.intervalId)
   }
 
   render () {
