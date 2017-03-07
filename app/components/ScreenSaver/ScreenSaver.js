@@ -28,10 +28,22 @@ class ScreenSaver extends React.Component {
   }
 
   componentDidUpdate () {
-    $('#ScreenSaver').smoothSlides({
+    const screenSaverElement = $('#ScreenSaver')
+    screenSaverElement.smoothSlides({
       matchImageSize: false,
       navigation: false,
       pagination: false
+    })
+    screenSaverElement.on('smoothslidesReordered', (e) => {
+      const renderedIndexes = $('.ss-slide img').map((index, element) => {
+        const key = $(element).attr('key')
+        return (typeof key === typeof undefined) ? '' : key.split('image')[1]
+      }).get()
+      const index = this.randomIndexOfArrayWithExclusions(this.state.images, renderedIndexes)
+      $('.ss-slide:first img', screenSaverElement).attr({
+        'key': `image${index}`,
+        'src': this.state.images[index]
+      })
     })
   }
 
@@ -56,7 +68,7 @@ class ScreenSaver extends React.Component {
           let tag = tags[i]
           let imageFiles = imageArrays[0][tag]
 
-          imageFiles.map((image) => {
+          imageFiles.forEach((image) => {
             imageUrls.push(self.buildImageUrl(tag, image.filename))
           })
         }
@@ -86,9 +98,17 @@ class ScreenSaver extends React.Component {
     return ('http://localhost:3030/' + tag + '/' + filename)
   }
 
+  randomIndexOfArrayWithExclusions (arr, exclusions) {
+    let index
+    do {
+      index = Math.floor(Math.random() * arr.length)
+    } while (exclusions.indexOf(index) !== -1)
+    return index
+  }
+
   render () {
     const imageHtml = (this.state.images)
-    ? this.state.images.map((imageUrl, index) => {
+    ? this.state.images.slice(0, 4).map((imageUrl, index) => {
       const key = `image${index}`
       return (<img key={key} src={imageUrl} />)
     })

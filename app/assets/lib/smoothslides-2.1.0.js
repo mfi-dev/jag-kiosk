@@ -57,6 +57,7 @@ Smoothslides 2.1.0 by Kevin Thornbloom is licensed under a Creative Commons Attr
 						'opacity':'1',
 						'transform':'none'
 					});
+          $(that).trigger('smoothslidesReordered');
 					$(that).find('.ss-slide:last').css({
 						'transition': 'all ' + options.effectDuration + 'ms ' + options.effectEasing +'',
 						'transform':'scale(1)  rotate(0deg)'
@@ -77,6 +78,7 @@ Smoothslides 2.1.0 by Kevin Thornbloom is licensed under a Creative Commons Attr
 						'opacity':'1',
 						'transform':'none'
 					});
+          $(that).trigger('smoothslidesReordered');
 					$(that).find('.ss-slide:last').css({
 						'transition': 'all ' + options.effectDuration + 'ms ' + options.effectEasing +'',
 						'transform':'scale(1)  rotate(0deg)'
@@ -97,6 +99,7 @@ Smoothslides 2.1.0 by Kevin Thornbloom is licensed under a Creative Commons Attr
 						'opacity':'1',
 						'transform':'none'
 					});
+          $(that).trigger('smoothslidesReordered');
 					$(that).find('.ss-slide:last').css({
 						'transition': 'all ' + options.effectDuration + 'ms ' + options.effectEasing +'',
 						'transform':'scale(1.3) rotate(0deg)'
@@ -118,6 +121,7 @@ Smoothslides 2.1.0 by Kevin Thornbloom is licensed under a Creative Commons Attr
 						'opacity':'1',
 						'transform':'none'
 					});
+          $(that).trigger('smoothslidesReordered');
 					$(that).find('.ss-slide:last').css({
 						'transition': 'all ' + options.effectDuration + 'ms ' + options.effectEasing +'',
 						'transform':'scale(1.3) translateX(0%)'
@@ -138,6 +142,7 @@ Smoothslides 2.1.0 by Kevin Thornbloom is licensed under a Creative Commons Attr
 						'opacity':'1',
 						'transform':'none'
 					});
+          $(that).trigger('smoothslidesReordered');
 					$(that).find('.ss-slide:last').css({
 						'transition': 'all ' + options.effectDuration + 'ms ' + options.effectEasing +'',
 						'transform':'scale(1.3) translateX(0%)'
@@ -158,6 +163,7 @@ Smoothslides 2.1.0 by Kevin Thornbloom is licensed under a Creative Commons Attr
 						'opacity':'1',
 						'transform':'none'
 					});
+          $(that).trigger('smoothslidesReordered');
 					$(that).find('.ss-slide:last').css({
 						'transition': 'all ' + options.effectDuration + 'ms ' + options.effectEasing +'',
 						'transform':'scale(1.3) translateY(0%)'
@@ -178,6 +184,7 @@ Smoothslides 2.1.0 by Kevin Thornbloom is licensed under a Creative Commons Attr
 						'opacity':'1',
 						'transform':'none'
 					});
+          $(that).trigger('smoothslidesReordered');
 					$(that).find('.ss-slide:last').css({
 						'transition': 'all ' + options.effectDuration + 'ms ' + options.effectEasing +'',
 						'transform':'scale(1.3) translateY(0%)'
@@ -198,6 +205,7 @@ Smoothslides 2.1.0 by Kevin Thornbloom is licensed under a Creative Commons Attr
 						'opacity':'1',
 						'transform':'none'
 					});
+          $(that).trigger('smoothslidesReordered');
 					$(that).find('.ss-slide:last').css({
 						'transition': 'all ' + options.effectDuration + 'ms ' + options.effectEasing +'',
 						'transform':'scale(1.3) translateY(0%) translateX(0%)'
@@ -218,6 +226,7 @@ Smoothslides 2.1.0 by Kevin Thornbloom is licensed under a Creative Commons Attr
 						'opacity':'1',
 						'transform':'none'
 					});
+          $(that).trigger('smoothslidesReordered');
 					$(that).find('.ss-slide:last').css({
 						'transition': 'all ' + options.effectDuration + 'ms ' + options.effectEasing +'',
 						'transform':'scale(1.3) translateY(0%) translateX(0%)'
@@ -238,6 +247,7 @@ Smoothslides 2.1.0 by Kevin Thornbloom is licensed under a Creative Commons Attr
 						'opacity':'1',
 						'transform':'none'
 					});
+          $(that).trigger('smoothslidesReordered');
 					$(that).find('.ss-slide:last').css({
 						'transition': 'all ' + options.effectDuration + 'ms ' + options.effectEasing +'',
 						'transform':'scale(1.3) translateY(0%) translateX(0%)'
@@ -258,6 +268,7 @@ Smoothslides 2.1.0 by Kevin Thornbloom is licensed under a Creative Commons Attr
 						'opacity':'1',
 						'transform':'none'
 					});
+          $(that).trigger('smoothslidesReordered');
 					$(that).find('.ss-slide:last').css({
 						'transition': 'all ' + options.effectDuration + 'ms ' + options.effectEasing +'',
 						'transform':'scale(1.3) translateY(0%) translateX(0%)'
