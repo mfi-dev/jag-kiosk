@@ -65,8 +65,7 @@ class SwiperPage extends React.Component {
 
 SwiperPage.propTypes = {
   tag: React.PropTypes.string.isRequired,
-  title: React.PropTypes.string.isRequired,
-  images: React.PropTypes.array
+  title: React.PropTypes.string.isRequired
 }
 
 export default SwiperPage

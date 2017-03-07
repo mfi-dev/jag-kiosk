@@ -1,7 +1,11 @@
-/* global startScreenSaver */
+/* global $ */
+'use strict'
 
 import React from 'react'
+import Clock from '../Clock'
 import axios from 'axios'
+
+import './smoothslides.theme.css'
 import './ScreenSaver.styl'
 
 const jsonUrl = 'http://localhost:3030/images/json'
@@ -23,7 +27,11 @@ class ScreenSaver extends React.Component {
   }
 
   componentDidUpdate () {
-    startScreenSaver()
+    $('#ScreenSaver').smoothSlides({
+      matchImageSize: false,
+      navigation: false,
+      pagination: false
+    })
   }
 
   getImages () {
@@ -40,7 +48,7 @@ class ScreenSaver extends React.Component {
 
     Promise.all([requestImages])
       .then(imageArrays => {
-        const tags = ['early_years', 'modern_era', 'todays_force']
+        const tags = ['todays_force']
         let imageUrls = []
 
         for (let i = 0; i < tags.length; i++) {
@@ -52,9 +60,16 @@ class ScreenSaver extends React.Component {
           })
         }
 
+        let randomImageUrls = []
+        let _tmp = imageUrls.slice()
+        for (var i = 0; i < imageUrls.length; i++) {
+          var index = Math.ceil(Math.random() * 10) % _tmp.length
+          randomImageUrls.push(_tmp.splice(index, 1)[0])
+        }
+
         self.setState({
           loading: false,
-          images: imageUrls
+          images: randomImageUrls
         })
       })
       .catch((error) => {
@@ -72,14 +87,17 @@ class ScreenSaver extends React.Component {
 
   render () {
     const imageHtml = (this.state.images)
-    ? this.state.images.map((imageUrl) => {
-      <img src={imageUrl} />
+    ? this.state.images.map((imageUrl, index) => {
+      const key = `image${index}`
+      return (<img key={key} src={imageUrl} />)
     })
-    : console.log(this.state.images)
-
+    : <h4>Loading Images</h4>
     return (
-      <div id='ScreenSaver' className='ScreenSaver'>
-        {imageHtml}
+      <div className='Page ScreenSaverContainer'>
+        <Clock />
+        <div id='ScreenSaver' className='ScreenSaver smoothslides'>
+          {imageHtml}
+        </div>
       </div>
     )
   }

@@ -5,9 +5,9 @@
   "main": "./app/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "babel-node ./images/server.js & babel-node dev-server.js",
+    "dev": "babel-node ./app/images/server.js & babel-node dev-server.js",
     "start": "webpack && electron .",
-    "load-images": "babel-node ./images/server.js &"
+    "load-images": "babel-node ./app/images/server.js &"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,10 @@
     "fs": "0.0.1-security",
     "json-loader": "^0.5.4",
     "jsonfile": "^2.4.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "moment-timezone": "^0.5.11",
+    "momentjs": "^2.0.0",
     "path": "^0.12.7",
     "react": "^15.4.2",
     "react-addons-shallow-compare": "^15.4.2",
