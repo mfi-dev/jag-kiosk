@@ -4,12 +4,10 @@
 import React from 'react'
 import { Link } from 'react-router'
 import Clock from '../Clock'
-import axios from 'axios'
 
 import './smoothslides.theme.css'
 import './ScreenSaver.styl'
-
-const jsonUrl = 'http://localhost:3030/images/json'
+import ImageJson from '../../images/images.json'
 
 class ScreenSaver extends React.Component {
 
@@ -47,50 +45,18 @@ class ScreenSaver extends React.Component {
   }
 
   getImages () {
-    let self = this
-    let requestImages = new Promise((resolve, reject) => {
-      axios.get(jsonUrl)
-        .then(response => {
-          resolve(response.data)
-        })
-        .catch(error => {
-          console.log(error)
-        })
+    let imageUrls = []
+    let tag = 'todays_force'
+    let imageFiles = ImageJson[tag]
+
+    imageFiles.forEach((image) => {
+      imageUrls.push(this.buildImageUrl(tag, image.filename))
     })
 
-    Promise.all([requestImages])
-      .then(imageArrays => {
-        const tags = ['todays_force']
-        let imageUrls = []
-
-        for (let i = 0; i < tags.length; i++) {
-          let tag = tags[i]
-          let imageFiles = imageArrays[0][tag]
-
-          imageFiles.forEach((image) => {
-            imageUrls.push(self.buildImageUrl(tag, image.filename))
-          })
-        }
-
-        let randomImageUrls = []
-        let _tmp = imageUrls.slice()
-        for (var i = 0; i < imageUrls.length; i++) {
-          var index = Math.ceil(Math.random() * 10) % _tmp.length
-          randomImageUrls.push(_tmp.splice(index, 1)[0])
-        }
-
-        self.setState({
-          loading: false,
-          images: randomImageUrls
-        })
-      })
-      .catch((error) => {
-        self.setState({
-          loading: false,
-          error: 'Unable to load images.'
-        })
-        console.log(error)
-      })
+    this.setState({
+      loading: false,
+      images: imageUrls
+    })
   }
 
   buildImageUrl (tag, filename) {
