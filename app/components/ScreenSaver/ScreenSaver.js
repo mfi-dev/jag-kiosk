@@ -35,14 +35,13 @@ class ScreenSaver extends React.Component {
       pagination: false
     })
     screenSaverElement.on('smoothslidesReordered', (e) => {
-      const renderedIndexes = $('.ss-slide img').map((index, element) => {
-        const key = $(element).attr('key')
-        return (typeof key === typeof undefined) ? '' : key.split('image')[1]
-      }).get()
-      const index = this.randomIndexOfArrayWithExclusions(this.state.images, renderedIndexes)
+      const lastRenderedIndex = parseInt($('.ss-slide:nth-child(2) img', screenSaverElement).attr('data-index'))
+      const nextIndex = (lastRenderedIndex === (this.state.images.length - 1))
+        ? 0
+        : lastRenderedIndex + 1
       $('.ss-slide:first img', screenSaverElement).attr({
-        'key': `image${index}`,
-        'src': this.state.images[index]
+        'src': this.state.images[nextIndex],
+        'data-index': nextIndex
       })
     })
   }
@@ -110,7 +109,7 @@ class ScreenSaver extends React.Component {
     const imageHtml = (this.state.images)
     ? this.state.images.slice(0, 4).map((imageUrl, index) => {
       const key = `image${index}`
-      return (<img key={key} src={imageUrl} />)
+      return (<img key={key} src={imageUrl} data-index={index} />)
     })
     : <h4>Loading Images</h4>
     return (
