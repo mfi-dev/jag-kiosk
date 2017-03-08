@@ -38,6 +38,28 @@ function initScreenSaver () {
   mySwiper.scrollbarHide = true
 }
 
+var date = new Date()
+var time = date.getTime()
+var timeout = 420000 // 7 minutes
+var checkTime = 30000 // 30 seconds
+
+$(document).bind('touchstart click', function (e) {
+  time = new Date().getTime()
+})
+
+setInterval(function () {
+  if (new Date().getTime() - time >= timeout) {
+    var loc = window.location.href
+    var index = loc.indexOf('/#/') + 1
+    var page = loc.substring(loc.indexOf('/#/') + 3)
+    if (index < loc.length - 3 && page !== 'screensaver') {
+      window.location = loc.substring(0, index)
+    } else {
+      window.location = '/#/screensaver'
+    }
+  }
+}, checkTime)
+
 // Preventing pinch-to-zoom
 document.addEventListener('mousewheel', e => {
   if (e.ctrlKey) e.preventDefault()

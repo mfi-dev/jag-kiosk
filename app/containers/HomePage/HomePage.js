@@ -1,6 +1,5 @@
 import React from 'react'
 import LinkBox from '../../components/LinkBox'
-import { Link } from 'react-router'
 import './HomePage.styl'
 
 class HomePage extends React.Component {
@@ -15,7 +14,6 @@ class HomePage extends React.Component {
           <LinkBox link='/modern-era' title='Modern Era' />
           <LinkBox link='/todays-force' title="Today's Force" />
         </nav>
-        <Link to='/screensaver'>screensaver</Link>
       </div>
     )
   }

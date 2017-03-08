@@ -1,4 +1,4 @@
-/* global initScreenSaver */
+/* global initScreenSaver, $ */
 import React from 'react'
 import './smoothslides.theme.css'
 import './ScreenSaver.styl'
@@ -7,6 +7,19 @@ class ScreenSaver extends React.Component {
   componentDidUpdate () {
     initScreenSaver()
   }
+  componentDidMount () {
+    $('.ScreenSaverPage').bind('touchstart click', this.handleClick)
+  }
+  componentWillUnmount () {
+    $('.ScreenSaverPage').unbind('touchstart click', this.handleClick)
+  }
+
+  handleClick (e) {
+    e.stopPropagation()
+    e.preventDefault()
+    window.location = '/'
+  }
+
   render () {
     const swiperSlides = (this.props.images.length)
       ? this.props.images.map((image, index) => {
