@@ -1,7 +1,12 @@
 import './App.styl'
 import React from 'react'
+import FastClick from 'fastclick'
 
 class App extends React.Component {
+  componentDidMount () {
+    FastClick.attach(document.body)
+  }
+
   render () {
     const { children } = this.props
     return (

@@ -1,7 +1,7 @@
 import App from './containers/App'
 import HomePage from './containers/HomePage'
 import {EarlyYearsPage, ModernEraPage, TodaysForcePage} from './containers/SwiperPages'
-import ScreenSaver from './components/ScreenSaver'
+import ScreenSaverPage from './containers/ScreenSaverPage'
 
 export default([
   {
@@ -12,7 +12,7 @@ export default([
       { path: '/early-years', component: EarlyYearsPage },
       { path: '/modern-era', component: ModernEraPage },
       { path: '/todays-force', component: TodaysForcePage },
-      { path: '/screensaver', component: ScreenSaver }
+      { path: '/screensaver', component: ScreenSaverPage }
     ]
   }
 ])
