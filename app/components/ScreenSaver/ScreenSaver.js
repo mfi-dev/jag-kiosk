@@ -13,7 +13,6 @@ class ScreenSaver extends React.Component {
       fadeSpeed: 1200,
       ease3d: 'ease-out'
     })
-    console.log($('#kenburns-slideshow').html)
   }
 
   componentWillUnmount () {
