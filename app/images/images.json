@@ -62,7 +62,8 @@
 
     {
       "filename": "early_test_pilot.jpg",
-      "description": "Early test pilot"
+      "description": "Early test pilot",
+      "format": "tall"
     },
 
     {
@@ -72,7 +73,8 @@
 
     {
       "filename": "former_tjag_maj_gen_james_cheney.jpg",
-      "description": "Former TJAG Major General James Cheney"
+      "description": "Former TJAG Major General James Cheney",
+      "format": "tall"
     },
 
     {
@@ -171,7 +173,8 @@
 
     {
       "filename": "afjags_dedication.jpg",
-      "description": "Air Force JAGs dedication"
+      "description": "Air Force JAGs dedication",
+      "format": "tall"
     },
 
     {
@@ -440,7 +443,8 @@
 
     {
       "filename": "jags_in_a_court-martial.jpg",
-      "description": "JAGs in a court martial"
+      "description": "JAGs in a court martial",
+      "format": "tall"
     },
 
     {
@@ -500,7 +504,8 @@
 
     {
       "filename": "legal_office_in_front_of_mt._rushmore.jpg",
-      "description": "Legal office in front of Mount Rushmore"
+      "description": "Legal office in front of Mount Rushmore",
+      "format": "tall"
     },
 
     {
@@ -545,7 +550,8 @@
 
     {
       "filename": "paralegal_with_case_files.jpg",
-      "description": "Paralegal with case files"
+      "description": "Paralegal with case files",
+      "format": "tall"
     },
 
     {
