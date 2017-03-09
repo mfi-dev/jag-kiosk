@@ -16,7 +16,7 @@ class ScreenSaverPage extends React.Component {
       }
     })
     this.state = {
-      images: imageUrls
+      images: _.shuffle(imageUrls)
     }
   }
 
