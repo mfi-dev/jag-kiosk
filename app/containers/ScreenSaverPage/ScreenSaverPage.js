@@ -1,6 +1,7 @@
 import React from 'react'
 import Clock from '../../components/Clock'
 import ScreenSaver from '../../components/ScreenSaver'
+import _ from 'lodash'
 import IMAGE_JSON from '../../images/images.json'
 
 class ScreenSaverPage extends React.Component {
@@ -15,16 +16,17 @@ class ScreenSaverPage extends React.Component {
       }
     })
     this.state = {
-      images: imageUrls,
-      loading: true,
-      error: null,
-      intervalId: null
+      images: _.sampleSize(imageUrls, 30)
     }
+  }
+
+  componentWillMount () {
+    console.log(window.location)
   }
 
   render () {
     return (
-      <div className='Page ScreenSaverPage'>
+      <div id='ScreenSaver' className='Page ScreenSaverPage disabled'>
         <Clock />
         <ScreenSaver images={this.state.images} />
       </div>

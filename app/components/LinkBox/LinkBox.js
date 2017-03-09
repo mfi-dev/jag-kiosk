@@ -11,6 +11,7 @@ class LinkBox extends React.Component {
       $(this).addClass('active')
       setTimeout(function () {
         window.location = href
+        console.log('window location now = ', href)
       }, 350)
     })
   }

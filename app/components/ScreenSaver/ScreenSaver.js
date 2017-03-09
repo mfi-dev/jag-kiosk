@@ -1,15 +1,28 @@
-/* global initScreenSaver, $ */
+/* global $, Swiper */
 import React from 'react'
-import './smoothslides.theme.css'
 import './ScreenSaver.styl'
 
 class ScreenSaver extends React.Component {
-  componentDidUpdate () {
-    initScreenSaver()
-  }
+
   componentDidMount () {
     $('.ScreenSaverPage').bind('touchstart click', this.handleClick)
+    var mySwiper = new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      loop: false,
+      scrollbarHide: true,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      resistance: false,
+      height: 1080,
+      width: 1920,
+      autoplay: 9000,
+      setWrapperSize: true,
+      effect: 'coverflow'
+    })
+    mySwiper.pagination = false
+    mySwiper.scrollbarHide = true
   }
+
   componentWillUnmount () {
     $('.ScreenSaverPage').unbind('touchstart click', this.handleClick)
   }
@@ -17,7 +30,7 @@ class ScreenSaver extends React.Component {
   handleClick (e) {
     e.stopPropagation()
     e.preventDefault()
-    window.location = '/'
+    window.location = '#/'
   }
 
   render () {

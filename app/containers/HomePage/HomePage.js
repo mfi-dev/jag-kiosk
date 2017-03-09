@@ -1,5 +1,6 @@
 import React from 'react'
 import LinkBox from '../../components/LinkBox'
+// import { hashHistory } from 'react-router'
 import './HomePage.styl'
 
 class HomePage extends React.Component {

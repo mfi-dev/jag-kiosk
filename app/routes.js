@@ -9,10 +9,10 @@ export default([
     component: App,
     indexRoute: {component: HomePage},
     childRoutes: [
-      { path: '/early-years', component: EarlyYearsPage },
-      { path: '/modern-era', component: ModernEraPage },
-      { path: '/todays-force', component: TodaysForcePage },
-      { path: '/screensaver', component: ScreenSaverPage }
+      { name: 'early-years', path: '/early-years', component: EarlyYearsPage },
+      { name: 'modern-era', path: '/modern-era', component: ModernEraPage },
+      { name: 'todays-force', path: '/todays-force', component: TodaysForcePage },
+      { name: 'screensaver', path: '/screensaver', component: ScreenSaverPage }
     ]
   }
 ])
