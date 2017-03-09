@@ -16,12 +16,8 @@ class ScreenSaverPage extends React.Component {
       }
     })
     this.state = {
-      images: _.sampleSize(imageUrls, 30)
+      images: imageUrls
     }
-  }
-
-  componentWillMount () {
-    console.log(window.location)
   }
 
   render () {

@@ -15,12 +15,12 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 1920,
     height: 1080,
-    kiosk: false,
-    closable: true,
+    kiosk: true,
+    closable: false,
     enableLargerThanScreen: false,
     autoHideMenuBar: true,
     titleBarStyle: 'hidden',
-    movable: true
+    movable: false
   })
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
@@ -30,7 +30,7 @@ function createWindow () {
   mainWindow.on('closed', function () {
     mainWindow = null
   })
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 }
 
 app.commandLine.appendSwitch('--enable-viewport-meta', 'true')
