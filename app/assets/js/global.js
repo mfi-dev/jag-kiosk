@@ -1,6 +1,7 @@
 /* global Swiper, $ */
+var mySwiper
 function initSwiper () {
-  var mySwiper = new Swiper('.swiper-container', {
+  mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: false,
     pagination: '.swiper-pagination',
@@ -22,12 +23,14 @@ $.featherlight.autoBind = false
 
 var date = new Date()
 var time = date.getTime()
-var timeout = 30000 // 7 minutes
-var checkTime = 10000 // 30 seconds
+var timeout = 30000 // 30 seconds
+var checkTime = 10000 // 10 seconds
 
 $(document).bind('touchstart click', function (e) {
   time = new Date().getTime()
 })
+
+console.log('test')
 
 setInterval(function () {
   if (new Date().getTime() - time >= timeout) {

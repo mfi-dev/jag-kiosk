@@ -1,4 +1,4 @@
-/* global initSwiper, $ */
+/* global initSwiper, $, mySwiper */
 import React from 'react'
 import FastClick from 'fastclick'
 import './Featherlight.css'
@@ -17,6 +17,14 @@ class Swiper extends React.Component {
         $('#slide' + index).featherlight()
       })
     }
+  }
+
+  componentWillUnmount () {
+    const currentlyOpenFeatherlight = $.featherlight.current()
+    if (currentlyOpenFeatherlight !== null) {
+      currentlyOpenFeatherlight.close()
+    }
+    mySwiper.destroy()
   }
 
   render () {

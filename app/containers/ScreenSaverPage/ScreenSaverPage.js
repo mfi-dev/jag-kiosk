@@ -31,7 +31,7 @@ class ScreenSaverPage extends React.Component {
 
   render () {
     return (
-      <div id='ScreenSaver' className='Page ScreenSaverPage disabled'>
+      <div id='ScreenSaver' className='Page ScreenSaverPage'>
         <Clock />
         <ScreenSaver images={this.state.images} />
       </div>
