@@ -1,4 +1,6 @@
 /* global Swiper, $ */
+'use strict'
+
 var mySwiper
 function initSwiper () {
   mySwiper = new Swiper('.swiper-container', {
@@ -29,8 +31,6 @@ var checkTime = 10000 // 10 seconds
 $(document).bind('touchstart click', function (e) {
   time = new Date().getTime()
 })
-
-console.log('test')
 
 setInterval(function () {
   if (new Date().getTime() - time >= timeout) {
