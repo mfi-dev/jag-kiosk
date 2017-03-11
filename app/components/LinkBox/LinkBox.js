@@ -7,11 +7,12 @@ class LinkBox extends React.Component {
   componentDidMount () {
     $('.LinkBox').click(function (e) {
       e.preventDefault()
-      var href = $(this).attr('href')
+      const href = $(this).attr('href')
       $(this).addClass('active')
-      setTimeout(function () {
+      $(this).delay(350).queue(function () {
         window.location = href
-      }, 350)
+        $(this).dequeue()
+      })
     })
   }
 

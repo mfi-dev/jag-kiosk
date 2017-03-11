@@ -1,8 +1,10 @@
-import './App.styl'
 import React from 'react'
 import FastClick from 'fastclick'
+import ScreenSaver from '../../components/ScreenSaver'
+import './App.styl'
 
 class App extends React.Component {
+
   componentDidMount () {
     FastClick.attach(document.body)
   }
@@ -14,6 +16,7 @@ class App extends React.Component {
         <main>
           {children}
         </main>
+        <ScreenSaver />
       </div>
     )
   }
