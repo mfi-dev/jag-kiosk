@@ -1,13 +1,21 @@
 /* global initSwiper, $, mySwiper */
 import React from 'react'
-import FastClick from 'fastclick'
 import './Featherlight.css'
 import './Swiper.css'
 import './Swiper.styl'
 
 class Swiper extends React.Component {
   componentDidMount () {
-    FastClick.attach(document.body)
+    $('.Swiper__Nav').click((e) => {
+      this.activateNavButton(e.currentTarget)
+    })
+  }
+
+  activateNavButton (el) {
+    $(el).addClass('active')
+    setTimeout(function () {
+      $(el).removeClass('active')
+    }, 250)
   }
 
   componentDidUpdate () {

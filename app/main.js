@@ -15,12 +15,12 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 1920,
     height: 1080,
-    kiosk: true,
-    closable: false,
+    kiosk: false,
+    closable: true,
     enableLargerThanScreen: false,
     autoHideMenuBar: true,
     titleBarStyle: 'hidden',
-    movable: false
+    moveable: true
   })
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),

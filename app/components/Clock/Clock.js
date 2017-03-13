@@ -6,7 +6,7 @@ import './Clock.styl'
 class Clock extends React.Component {
   setTime () {
     const now = Moment()
-    const date = now.format('dddd, MMMM do YYYY')
+    const date = now.format('dddd, MMMM Do YYYY')
     const time = now.format('HH:mm')
     this.setState({
       date: date,

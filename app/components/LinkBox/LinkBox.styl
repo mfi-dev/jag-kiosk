@@ -11,6 +11,7 @@
   margin-bottom 88px
   text-decoration none
   text-transform uppercase
+  transition transform 200ms linear
 
   svg
     position absolute
@@ -34,7 +35,8 @@
 
   &.active
     box-shadow none
-    -webkit-transform scale3d(.98, .98, 1)
+    transform scale3d(.98, .98, 1)
+
     & svg line.top
       transform translateX(-297px)
 
