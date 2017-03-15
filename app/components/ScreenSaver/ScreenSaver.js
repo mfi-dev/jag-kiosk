@@ -77,13 +77,11 @@ class ScreenSaver extends React.Component {
   }
 
   hideScreenSaver () {
-    console.log('hiding')
     $('#ScreenSaver').removeClass('active')
   }
 
   updateLastClickedTime () {
     const date = new Date()
-    console.log('here')
     this.setState({
       lastClickTime: date.getTime()
     })

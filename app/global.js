@@ -13,7 +13,10 @@ function initSwiper () {
     slidesPerView: 3,
     slidesPerGroup: 3,
     spaceBetween: 10,
-    resistance: false
+    resistance: false,
+    onSlideChangeEnd: function (swiper) {
+      swiper.update()
+    }
   })
   mySwiper.pagination = true
   mySwiper.scrollbarHide = true

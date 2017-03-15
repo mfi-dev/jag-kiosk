@@ -7,7 +7,6 @@ class SideBar extends React.Component {
   componentDidMount () {
     $('.BackButton').on('touchstart, click', function (e) {
       e.preventDefault()
-      console.log('touchstarted and clicked?')
       var href = $(this).attr('href')
       $(this).addClass('active')
       setTimeout(function () {
