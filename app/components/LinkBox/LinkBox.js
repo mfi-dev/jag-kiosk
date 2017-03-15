@@ -5,7 +5,7 @@ import './LinkBox.styl'
 
 class LinkBox extends React.Component {
   componentDidMount () {
-    $('.LinkBox').on('click', function (e) {
+    $('.LinkBox').on('touchstart, click', function (e) {
       e.preventDefault()
       const href = $(this).attr('href')
       $(this).addClass('active')

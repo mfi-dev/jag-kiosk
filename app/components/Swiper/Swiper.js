@@ -6,7 +6,7 @@ import './Swiper.styl'
 
 class Swiper extends React.Component {
   componentDidMount () {
-    $('.Swiper__Nav').click((e) => {
+    $('.Swiper__Nav').on('touchstart, click', (e) => {
       this.activateNavButton(e.currentTarget)
     })
   }
@@ -15,7 +15,7 @@ class Swiper extends React.Component {
     $(el).addClass('active')
     setTimeout(function () {
       $(el).removeClass('active')
-    }, 250)
+    }, 200)
   }
 
   componentDidUpdate () {

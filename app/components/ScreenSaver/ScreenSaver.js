@@ -55,8 +55,8 @@ class ScreenSaver extends React.Component {
     this.setState({
       lastClickTime: date.getTime()
     })
-    $(window).bind('click', this.updateLastClickedTime)
-    ScreenSaver.bind('click', this.hideScreenSaver)
+    $(window).bind('touchstart, click', this.updateLastClickedTime)
+    ScreenSaver.bind('touchstart, click', this.hideScreenSaver)
   }
 
   checkTimeout () {
@@ -77,11 +77,13 @@ class ScreenSaver extends React.Component {
   }
 
   hideScreenSaver () {
+    console.log('hiding')
     $('#ScreenSaver').removeClass('active')
   }
 
   updateLastClickedTime () {
     const date = new Date()
+    console.log('here')
     this.setState({
       lastClickTime: date.getTime()
     })

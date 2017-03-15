@@ -5,8 +5,9 @@ import './SideBar.styl'
 
 class SideBar extends React.Component {
   componentDidMount () {
-    $('.BackButton').click(function (e) {
+    $('.BackButton').on('touchstart, click', function (e) {
       e.preventDefault()
+      console.log('touchstarted and clicked?')
       var href = $(this).attr('href')
       $(this).addClass('active')
       setTimeout(function () {
@@ -14,6 +15,7 @@ class SideBar extends React.Component {
       }, 200)
     })
   }
+
   render () {
     return (
       <div className='SideBar'>
