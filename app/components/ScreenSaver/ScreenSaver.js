@@ -1,6 +1,5 @@
 /* global $ */
 import React from 'react'
-import Clock from '../../components/Clock'
 import _ from 'lodash'
 import './ScreenSaver.styl'
 import IMAGE_JSON from '../../images/images.json'
@@ -89,9 +88,7 @@ class ScreenSaver extends React.Component {
 
   render () {
     return (
-      <div id='ScreenSaver' className='Page ScreenSaverPage'>
-        <Clock />
-      </div>
+      <div id='ScreenSaver' className='Page ScreenSaverPage' />
     )
   }
 }
