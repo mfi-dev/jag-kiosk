@@ -41,7 +41,12 @@ class Swiper extends React.Component {
         const style = {
           backgroundImage: `url(${this.props.baseImageUrl}${image.filename})`
         }
+
         const id = `slide${index}`
+        const description = (image.description)
+          ? <div className='Swiper__ImageDescription'>{image.description}</div>
+          : ''
+
         return (
           <div
             key={image.filename + index}
@@ -50,8 +55,7 @@ class Swiper extends React.Component {
             style={style}
             className='swiper-slide'
           >
-            <div className='Swiper__ImageDescription'>{image.description}</div>
-
+            {description}
           </div>
         )
       })
@@ -74,11 +78,15 @@ class Swiper extends React.Component {
           style.width = 500
         }
 
+        const description = (image.description)
+          ? <div className='LightBox__Description'>{image.description}</div>
+          : ''
+
         return (
           <div className='Lightbox' id={id} key={id}>
             <div className='Lightbox__ImageContainer'>
               <div className='Lightbox__Image' style={style} />
-              <div className='LightBox__Description'>{image.description}</div>
+              {description}
             </div>
           </div>
         )

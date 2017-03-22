@@ -34,7 +34,7 @@ $content-area-padding = 80px
   &__Nav--Prev
     left 0
     &.active
-      animation swellPrev.25s
+      animation swellPrev .25s
 
 
   &__Nav--Next
@@ -65,10 +65,11 @@ $content-area-padding = 80px
   &__Description
     position absolute
     bottom 0
-    width 100%
     padding 20px 0
+    width calc(100% - 40px)
     background-color $black-alpha-dark
     text-align center
+    box-sizing content-box
 
   &__Image
     max-height 800px
