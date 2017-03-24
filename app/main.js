@@ -30,7 +30,6 @@ function createWindow () {
   mainWindow.on('closed', function () {
     mainWindow = null
   })
-  // mainWindow.webContents.openDevTools()
 }
 
 app.commandLine.appendSwitch('--enable-viewport-meta', 'true')

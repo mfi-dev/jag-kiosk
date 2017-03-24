@@ -39,23 +39,23 @@ class ScreenSaver extends React.Component {
   }
 
   componentDidMount () {
-    $('.ScreenSaverPage').bind('touchstart, click', this.handleClick)
-    $('#ScreenSaver').Kenburns({
+    const ScreenSaver = document.getElementById('ScreenSaver')
+    $(ScreenSaver).Kenburns({
       images: this.state.images,
       scale: 0.90,
       duration: 8000,
       fadeSpeed: 1200,
       ease3d: 'ease-out'
     })
+    ScreenSaver.addEventListener('touchstart', this.hideScreenSaver)
 
+    window.addEventListener('touchstart', this.updateLastClickedTime)
     window.setInterval(this.checkTimeout, this.state.timeOutInterval)
+
     const date = new Date()
-    const ScreenSaver = $('#ScreenSaver')
     this.setState({
       lastClickTime: date.getTime()
     })
-    $(window).bind('touchstart, click', this.updateLastClickedTime)
-    ScreenSaver.bind('touchstart, click', this.hideScreenSaver)
   }
 
   checkTimeout () {
@@ -72,11 +72,12 @@ class ScreenSaver extends React.Component {
     if (currentlyOpenFeatherlight !== null) {
       currentlyOpenFeatherlight.close()
     }
-    $('#ScreenSaver').addClass('active')
+    document.getElementById('ScreenSaver').classList.add('active')
   }
 
-  hideScreenSaver () {
-    $('#ScreenSaver').removeClass('active')
+  hideScreenSaver (evt) {
+    evt.preventDefault()
+    document.getElementById('ScreenSaver').classList.remove('active')
   }
 
   updateLastClickedTime () {
