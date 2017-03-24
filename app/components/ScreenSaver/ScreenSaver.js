@@ -28,8 +28,8 @@ class ScreenSaver extends React.Component {
     this.state = {
       images: _.shuffle(imageFiles),
       lastClickTime: date.getTime(),
-      timeOut: 60000,
-      timeOutInterval: 10000
+      timeOut: 600000, // 10 minutes
+      timeOutInterval: 10000 // 10 seconds
     }
   }
 
