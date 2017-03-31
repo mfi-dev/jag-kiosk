@@ -26,3 +26,13 @@ Touch-screen kiosk app for Air Force JAG offices
    ```
   
 ** This app was made for and should be ran at 1080p resolution **
+
+
+### To Add/Remove Images from the App
+- Images exist in the jag-kiosk/images directory. There are three separate directories, (early_years, modern_era, and todays_force) which hold all the images related to that category. At the top level of the images folder, there is an images.json file. 
+
+- To remove an image from the app, just delete it's reference in this `images.json` file.
+
+- To add an image, put it in the correct directory (early_years, etc.) and then modify the `images.json` file to include it. ** you must get the filename exactly correct **
+
+- If the image is in portrait, add `"format": "tall"` to the json for that image.
