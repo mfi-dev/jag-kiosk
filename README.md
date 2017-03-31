@@ -20,6 +20,10 @@ Touch-screen kiosk app for Air Force JAG offices
    ```
    cd MyProjectFolderGoesHere/jag-kiosk
    ```
+9. Install dependencies needed for app.
+   ```
+   npm i 
+   ```
 9. Run the app by typing:
    ```
    electron .
