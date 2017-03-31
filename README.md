@@ -3,7 +3,7 @@ Touch-screen kiosk app for Air Force JAG offices
 
 ### Installation Instructions (Windows) 
 1. Install [NodeJS](https://nodejs.org)
-2. Install [Cmder Mini](http://cmder.net)
+2. Download and unzip [Cmder Mini](http://cmder.net)
 3. Install [Github Desktop](https://desktop.github.com/)
 5. Open Cmder, navigate to folder you'd like to contain this software, clone this repository.
    ```
