@@ -40,3 +40,5 @@ Touch-screen kiosk app for Air Force JAG offices
 - To add an image, put it in the correct directory (early_years, etc.) and then modify the `images.json` file to include it. ** you must get the filename exactly correct **
 
 - If the image is in portrait, add `"format": "tall"` to the json for that image.
+
+- WARNING: Correct JSON format must remain in tact. Missing a comma or adding an unnecessary one will break the app! Refer to the format already used in the file and just remember not to add a trailing comma if the image is the last entry for a section.
